@@ -9,7 +9,7 @@ var completedList = [];
 app.controller('todoCtrl', function($scope, $http) {
     
     // Gets the JSON file to parse    
-    $http.get('../json/todo.json')
+    $http.get('json/todo.json')
         .then(function sucessCallBack(res){
         $scope.todos = res.data.todo;
         for(i=0; i<$scope.todos.length; i++){
