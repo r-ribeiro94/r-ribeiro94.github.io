@@ -1,0 +1,14 @@
+{
+	"todo" : [
+		{
+			"task": "Complete this Lab",
+			"complete": false,
+            "description": "Complete this lab by Saturday, March 26, 2016 @ 11:00PM"
+		},
+        {
+            "task": "Complete Assignments",
+            "complete": false,
+            "description": "Complete all assignments before due date."
+        }
+	]
+}

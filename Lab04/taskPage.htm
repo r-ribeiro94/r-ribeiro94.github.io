@@ -1,0 +1,52 @@
+<!-- 
+    Created by: Rogerio Ribeiro
+    Student Number: 500527368
+    Created for CPS630 Lab04
+-->
+<div class="container">
+    <h1>My Todo List</h1>
+        <form ng-submit="todoAdd(todoInput,todoDesc);todoInput='';todoDesc=''" name="form">
+            <div class="mainInputContainer">
+                <div class="inputContainer1">
+                    <input type="text" name="title" ng-model="todoInput" placeholder="Add New" required=""/>
+                    <label for="title">Title</label>
+                    <br />
+                </div>
+
+                <div class="inputContainer2">
+                    <input type="text" name="myName" ng-model="todoDesc" placeholder="Add a Description" id="secondInput" required>
+                    <label for="title">Description</label>
+                </div>
+                    
+                <div class="row">
+                    <br><button class="taskAdd" placeholder="Add New Task"><i class="fa fa-plus iconPlus"></i>Add Task</button>
+                </div>
+            </div>
+    </form>
+
+    <br>
+    
+    <ul class="taskList">
+        <li class="taskItem" ng-repeat="x in todos track by $index">
+             <span class="seperation">
+                <input type="checkbox" class="taskCheckbox" ng-model="x.complete">
+                <button ng-click="delete()" class="iconTrashButton"><i class="fa fa-trash-o iconTrash"></i></button>
+            </span>
+            <br><span class="complete-{{x.complete}}" id="title">{{x.task}}</span>
+            <br><br><span class="complete-{{x.complete}}" id="description">{{x.description}}</span>
+            
+        </li>
+        
+    </ul>
+    <div class="row">
+        <button class="removeButton" ng-click="completedTasks()">Remove Checked</button>
+        <button class="completeButton" ng-click="ShowHide()"><i class="fa fa-caret-down selectArrow"></i>Completed Tasks</button>
+    </div>
+    
+    <h1>Completed Tasks</h1>
+    <ul ng-repeat="i in list" ng-hide="IsHidden">
+        <br><span id="titleComplete">{{i.task}}</span>
+        <br><br><span id="descriptionComplete">{{i.description}}</span>
+    </ul>
+    
+</div>
