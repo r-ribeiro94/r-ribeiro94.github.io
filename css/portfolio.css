@@ -1,0 +1,305 @@
+/*!
+ * Start Bootstrap - Scrolling Nav (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+/*.navbar {
+    background-color: #383636;
+    border: none;
+}*/
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: #E45009;  /*Sets the text hover color on navbar*/
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active >   
+ a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    color: white; /*BACKGROUND color for active*/
+    background-color: #FF5A0B;
+}
+
+.navbar-default {
+    background-color: #383636;
+    border: none;
+}
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+    color: #262626;
+    text-decoration: none;
+    background-color: #66CCFF;  /*change color of links in drop down here*/
+}
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+    text-decoration: none;
+    background-color: silver; /*Change rollover cell color here*/
+}
+
+
+.navbar-default .navbar-nav > li > a {
+    color: #FFF2BC; /*Change active text color here*/
+    font-size: 20px;
+}
+
+@media(min-width:767px) {
+    .navbar {
+        padding: 20px 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .top-nav-collapse {
+        padding: 0;
+    }
+}
+
+/* JUMBOTRON Style*/
+.custom-jumbo {
+    height: 100vh;
+    min-height: 100%;
+    max-height: 100%;
+    background-color: #E45009;
+    background-size: cover;
+    color: #FFF2BC;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.custom-jumbo img {
+    width: 10%;
+    margin-top: 10%;
+}
+
+.custom-jumbo h1 {
+    margin-top: 20%;
+}
+
+/*.custom-jumbo hr{
+    width: 20%;
+    border: none;
+    height: 2.5px;
+    color: #FFF2BC;
+    background-color: #FFF2BC;
+}*/
+
+.custom-jumbo hr.star-light,
+hr.star-primary {
+  padding: 0;
+  border: none;
+  border-top: solid 5px;
+  text-align: center;
+  max-width: 250px;
+  margin: 25px auto 30px;
+}
+.custom-jumbo hr.star-light:after,
+.custom-jumbo hr.star-primary:after {
+  content: "\f108";
+  font-family: FontAwesome;
+  display: inline-block;
+  position: relative;
+  top: -0.8em;
+  font-size: 2em;
+  padding: 0 0.25em;
+}
+.custom-jumbo hr.star-light {
+  border-color: #FFF2BC;
+}
+.custom-jumbo hr.star-light:after {
+  background-color: #E45009;
+  color: #FFF2BC;
+}
+.custom-jumbo hr.star-primary {
+  border-color: #FFF2BC;
+}
+.custom-jumbo hr.star-primary:after {
+  background-color: #FFF2BC;
+  color: #FFF2BC;
+}
+
+/* About Section - All clases below correspond to the about section. */
+.about-section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    background: #eee;
+}
+
+@media (max-width: 1440px) {
+  .about-section {
+    height: 135%;
+  }
+}
+
+.about-section h3 { 
+  color: #383636; 
+  font-family: 'Julius Sans One', sans-serif; 
+  font-size: 22px; 
+  font-weight: bold; 
+  line-height: 32px; 
+  margin: 0 0 24px; 
+  text-shadow: 1px 1px 1px #082b34;
+}
+
+.about-section p {
+   color: #383636; 
+   font-family: 'Carme', sans-serif; 
+   font-size: 16px; 
+   line-height: 24px; 
+   margin: 0 0 24px;
+}
+
+.about-section-left {
+  height: 300px;
+  border-right: 1px solid #383636;
+}
+
+.top-3 {
+  margin-bottom: 18%;
+  font-size: 64px
+}
+
+.middle-3 {
+  font-size: 64px;
+}
+
+span.fancy-hello{
+  color: #FF0000; 
+  font-family: 'Rouge Script', cursive; 
+  font-size: 36px; 
+  font-weight: normal; 
+  line-height: 48px; 
+  margin: 0 0 50px;
+  margin-left: -90%;
+  text-align: center; 
+  text-shadow: 1px 1px 2px #082b34;
+  text-align: left;
+}
+
+.skills, .software {
+  margin-top: 5%;
+}
+/* Portfolio Section - All clases below correspond to the portfolio section. */
+.portfolio-section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    background: #fff;
+}
+
+#portfolio .portfolio-item {
+  margin: 0 0 15px;
+  right: 0;
+}
+#portfolio .portfolio-item .portfolio-link {
+  display: block;
+  position: relative;
+  max-width: 400px;
+  margin: 0 auto;
+}
+#portfolio .portfolio-item .portfolio-link .caption {
+  /*background: rgba(24, 188, 156, 0.9);*/
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all ease 0.5s;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+}
+#portfolio .portfolio-item .portfolio-link .caption:hover {
+  opacity: 1;
+}
+#portfolio .portfolio-item .portfolio-link .caption .caption-content {
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  font-size: 20px;
+  text-align: center;
+  top: 50%;
+  margin-top: -12px;
+  color: white;
+}
+#portfolio .portfolio-item .portfolio-link .caption .caption-content i {
+  margin-top: -12px;
+}
+#portfolio .portfolio-item .portfolio-link .caption .caption-content h3,
+#portfolio .portfolio-item .portfolio-link .caption .caption-content h4 {
+  margin: 0;
+}
+#portfolio * {
+  z-index: 2;
+}
+
+@media (min-width: 767px) {
+  #portfolio .portfolio-item {
+    margin: 0 0 30px;
+  }
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.modal-dialog {
+  position: fixed;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+
+.modal-content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 0;
+  box-shadow: none;
+  text-align: center;
+}
+
+.close-modal {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  background-color: transparent;
+  top: 25px;
+  right: 25px;
+  cursor: pointer;
+}
+
+.modal-body {
+  position: absolute;
+  top: 50px;
+  bottom: 60px;
+  width: 100%;
+  font-weight: 300;
+  overflow: auto;
+}
+
+/* Contact Section - All clases below correspond to the portfolio section. */
+.contact-section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    background: #eee;
+}
