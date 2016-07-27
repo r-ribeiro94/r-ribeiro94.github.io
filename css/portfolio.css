@@ -301,5 +301,139 @@ span.fancy-hello{
     height: 100%;
     padding-top: 150px;
     text-align: center;
-    background: #eee;
+    background-image: url(https://static.pexels.com/photos/34676/pexels-photo.jpg);
+}
+
+.contact-section h1{
+  color: white;
+  font-family: 'Rockwell Extra Bold', 'Rockwell Bold', monospace;
+  font-weight: bold;
+  font-size: 64px;
+  margin-bottom: 12.5%;
+}
+
+
+.form-control::-webkit-input-placeholder { color: white; }
+.form-control:-moz-placeholder { color: white; }
+.form-control::-moz-placeholder { color: white; }
+.form-control:-ms-input-placeholder { color: white; }
+
+input, select, textarea{
+    font-family: 'FontAwesome', Amaranth;
+    font-size: 14px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 20px; 
+    color: white;
+}
+
+textarea:focus, input:focus {
+    color: white;
+}
+
+input#name, input#email, input#subject, textarea#message {
+  position: relative;
+  margin-bottom: 5%;
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid white;
+}
+
+.floating-label-form-group input,
+.floating-label-form-group textarea {
+  z-index: 1;
+  position: relative;
+  padding-right: 0;
+  padding-left: 0;
+  border: none;
+  border-radius: 0;
+  font-size: 1.5em;
+  background: none;
+  box-shadow: none !important;
+  resize: none;
+}
+.floating-label-form-group label {
+  display: block;
+  z-index: 0;
+  position: relative;
+  top: 2em;
+  margin: 0;
+  font-size: 0.85em;
+  line-height: 1.764705882em;
+  vertical-align: middle;
+  vertical-align: baseline;
+  opacity: 0;
+  -webkit-transition: top 0.3s ease,opacity 0.3s ease;
+  -moz-transition: top 0.3s ease,opacity 0.3s ease;
+  -ms-transition: top 0.3s ease,opacity 0.3s ease;
+  transition: top 0.3s ease,opacity 0.3s ease;
+}
+
+button#send {
+  background-color: #FF5A0B;
+  border-color: #FF5A0B;
+}
+
+.footer-distributed{
+  background-color: #383636;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: normal 16px sans-serif;
+  padding: 45px 50px;
+}
+
+.footer-distributed .footer-left p{
+  color:  #FFF2BC;
+  font-size: 20px;
+  margin: 0;
+}
+
+/* Footer links */
+.footer-distributed p.footer-links a{
+  display:inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color:  inherit;
+}
+
+.footer-distributed .footer-right{
+  float: right;
+  margin-top: 6px;
+  max-width: 180px;
+}
+
+.footer-distributed .footer-right a{
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-color:  #806F66;
+  border-radius: 2px;
+
+  font-size: 20px;
+  color: #FFF2BC;
+  text-align: center;
+  line-height: 35px;
+
+  margin-left: 3px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 600px) {
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-right{
+    text-align: center;
+  }
+
+  .footer-distributed .footer-right{
+    float: none;
+    margin: 0 auto 20px;
+  }
+
+  .footer-distributed .footer-left p.footer-links{
+    line-height: 1.8;
+  }
 }
