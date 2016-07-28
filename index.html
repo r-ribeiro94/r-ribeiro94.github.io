@@ -59,6 +59,9 @@
                         <a class="page-scroll" href="#about">About</a>
                     </li>
                     <li>
+                      <a class="page-scroll" href="#services">Services</a>
+                    </li>
+                    <li>
                         <a class="page-scroll" href="#portfolio">Portfolio</a>
                     </li>
                     <li>
@@ -93,109 +96,46 @@
 
                         Outside of academics, my interests lie in playing video games and participating in sports such as soccer. Through these activities I have become a more team focused, result oriented and reliable person. These traits have allowed me to solve everyday problems and thrive in a team environment with an improved focus in achieving goals and going beyond expectations.
 
-                     <div class="skills col-lg-6">
-                        <div class="about-section-left">
-                             <h3>Skills</h3>
-                             <br>
-                             <div class="top-3">
-                                 <i class="devicon-css3-plain-wordmark colored col-lg-4"></i>
-                                 <i class="devicon-bootstrap-plain-wordmark colored col-lg-4"></i>
-                                 <i class="devicon-git-plain-wordmark colored col-lg-4"></i>
-                             </div>
-                             <div class="middle-3">
-                                 <i class="devicon-html5-plain-wordmark colored col-lg-4"></i>
-                                 <i class="devicon-javascript-plain colored col-lg-4"></i>
-                                 <i class="devicon-mongodb-plain-wordmark colored col-lg-4"></i>
-                             </div>
-                             <i class="devicon-nodejs-plain-wordmark colored col-lg-12" style="font-size: 74px;"></i>
-                         </div>
-                     </div>
-
-                     <div class="software col-lg-6">
-                        <div class="about-section-right">
-                             <h3>Software That I'm Familar With</h3>
-                             <br>
-                             <div class="top-3">
-                                 <i class="devicon-bitbucket-plain-wordmark colored col-lg-4"></i>
-                                 <i class="devicon-linux-plain colored col-lg-4"></i>
-                                 <i class="devicon-trello-plain colored col-lg-4"></i>
-                             </div>
-                             <div class="middle-3">
-                                 <i class="devicon-windows8-original colored col-lg-4"></i>
-                                 <i class="devicon-chrome-plain colored col-lg-4"></i>
-                             </div>
-                        </div>
-                     </div>
-
-
-
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Services Section -->
-<!--     <section id="portfolio" class="portfolio-section">
+    <section id="services" class="services-section">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2>Portfolio</h2>
-            <hr class="star-primary">
-          </div>
-        </div><br><br>
 
-        <div class="row">
-        
-          <div class="col-sm-4 portfolio-item">
-            <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-              <div class="caption">
-                <div class="caption-content">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <img src="img/WeatherApp.png" class="img-responsive" alt="">
-            </a>
+          <div class="skills">
+            <div class="services-section-left">
+               <h1 class="col-lg-4">Skills</h1>
+               <div class="col-lg-8">
+                 <i class="devicon-css3-plain-wordmark colored"></i>
+                 <i class="devicon-bootstrap-plain-wordmark colored"></i>
+                 <i class="devicon-git-plain-wordmark colored"></i>
+                 <i class="devicon-html5-plain-wordmark colored"></i>
+                 <i class="devicon-javascript-plain colored"></i>
+                 <i class="devicon-mongodb-plain-wordmark colored"></i>
+                 <i class="devicon-nodejs-plain-wordmark colored" ></i>
+                </div><br>
+             </div>
           </div>
-
-          <div class="col-sm-4 portfolio-item">
-            <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-              <div class="caption">
-                <div class="caption-content">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <img src="img/TechNews.png" class="img-responsive" alt="">
-            </a>
+         <hr>
+         <div class="software">
+            <div class="services-section-right">
+                 <h1 class="col-lg-4">Familiar Software</h1>
+                 <div class="col-lg-8">
+                   <i class="devicon-bitbucket-plain-wordmark colored"></i>
+                   <i class="devicon-linux-plain colored"></i>
+                   <i class="devicon-trello-plain colored"></i>
+                   <i class="devicon-windows8-original colored"></i>
+                   <i class="devicon-chrome-plain colored"></i>
+                 </div>
+            </div>
           </div>
-
-          <div class="col-sm-4 portfolio-item">
-            <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-              <div class="caption">
-                <div class="caption-content">
-                  <i class="fa fa-search-plus fa-3x" style="color:black"></i>
-                </div>
-              </div>
-              <img src="img/TodoList.png" class="img-responsive" alt="">
-            </a>
-          </div>
-
-          <div class="col-sm-4 portfolio-item">
-            <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-              <div class="caption">
-                <div class="caption-content">
-                  <i class="fa fa-search-plus fa-3x" style="color:black"></i>
-                </div>
-              </div>
-              <img src="img/DragAndDrop.png" class="img-responsive" alt="">
-            </a>
-          </div>
-
       </div>
-
-      </div> -->
-
-          <!-- Portfolio Grid Section -->
-    <section id="portfolio">
+    </section>
+    <!-- Portfolio Grid Section -->
+    <section id="portfolio" class="portfolio-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -266,30 +206,30 @@
                 <div class="col-lg-12">
                     <h1> Contact Me </h1>
 
-                    <form name="sentMessage" id="contactForm" novalidate>
+                    <form action="mail.php" method="POST">
                         <div class="form-group floating-label-form-group controls">
                           <div class="col-xs-6">
-                              <input type="text" class="form-control" placeholder="&#xf007 Name" id="name" required data-validation-required-message="Please enter your phone name."/>
+                              <input type="text" class="form-control" placeholder="&#xf007 Name" id="name" name="name" />
                           </div>
 
                           <div class="col-xs-6">
-                              <input type="text" class="form-control" placeholder="&#xf0e0 Email" id="email" required data-validation-required-message="Please enter your phone email."/>
+                              <input type="text" class="form-control" placeholder="&#xf0e0 Email" id="email" name="email"/>
                           </div><br><br><br><br>
                         </div>
                         <div class="form-group floating-label-form-group controls">
                             <div class="col-xs-12">
-                              <input type="text" class="form-control" placeholder="Subject" id="subject" required data-validation-required-message="Please enter a subject."/>
+                              <input type="text" class="form-control" placeholder="Subject" id="subject" name="subject"/>
                             </div>
                         </div>
                         <div class="form-group floating-label-form-group controls">
                             <div class="col-xs-12">
-                              <textarea rows="5" cols="50" name="comment" placeholder="Leave me a message ..." class="form-control" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                              <textarea rows="5" cols="50" name="comment" placeholder="Leave me a message ..." class="form-control" id="message" name="message"></textarea>
                             </div>
                         </div>
                         <br>
                         <div class="row">
                             <div class="form-group col-xs-12">
-                                <button type="submit" class="btn btn-success btn-lg" id="send">Send</button>
+                                <button type="submit" class="btn btn-success btn-lg" id="send" value="send">Send</button>
                             </div>
                         </div>
                     </form>
@@ -305,15 +245,14 @@
       <div class="footer-right">
 
         <a href="#"><i class="fa fa-facebook"></i></a>
-        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
         <a href="#"><i class="fa fa-linkedin"></i></a>
         <a href="#"><i class="fa fa-github"></i></a>
 
       </div>
 
       <div class="footer-left">
-        <p><i class="fa fa-phone"></i> (647)-229-6040</p>
-        <p>Rogerio Ribeiro &copy; 2016</p>
+        <p class="smaller-text">Rogerio Ribeiro &copy; 2016</p>
       </div>
 
     </footer>
@@ -348,7 +287,7 @@
                                 </strong>
                             </li>
                             <li>
-                                <p>Date: <strong>January 2016</strong></p>
+                                <p>Date: <strong>March 2016</strong></p>
                                 
                             </li>
                             <li>
@@ -386,20 +325,20 @@
           <div class="modal-body">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
-                        <h2>Todo List Application</h2>
+                        <h2>Drag and Drop Location Application</h2>
                         <hr class="star-primary">
-                        <img src="img/TodoList.png" class="img-responsive img-centered" alt="">
-                        <p>This a simple todo list application that uses AngularJs. It reads a JSON file with pre-loaded tasks and once the user adds another task it gets appened to the list but not to the JSON file. The user must input a title for the task and a description if neither is inputed they will be prompted to input both fields. <br><br>
+                        <img src="img/DragAndDrop.png" class="img-responsive img-centered" alt="">
+                        <p>This application takes advantage of the HTML5 geolocation and drag and drop feature. It reads a text file that has one coordinate in longitude and latitude format (ex: 47.000,-74.000). Once the text file has been dropped into the box, it will show both the location of the user and that of the text file. <br><br>
                         
-                          The remove checked button will remove all the checked tasks and stored it in a list of completed tasks. The completed tasks button will show/hide the completed tasks. 
+                          The 'Get Harvestine' button uses Web Worker to calculate the distance between the user's location and that of the text file, and the 'Stop Worker' button stops the Web Worker which doesn't allow the user to use the 'Get Harvestine' button, because the Web Worker has been dismissed. 
                         </p>
                         <ul class="list-inline item-details">
                             <li>Client:
-                                <strong><a href="https://github.com/r-ribeiro94/CPS630/tree/master/Lab04">Github</a>
+                                <strong><a href="https://github.com/r-ribeiro94/CPS630/tree/master/Lab3(V2)">Github</a>
                                 </strong>
                             </li>
                             <li>
-                                <p>Date: <strong>January 2016</strong></p>
+                                <p>Date: <strong>February 2016</strong></p>
                                 
                             </li>
                             <li>
@@ -408,6 +347,165 @@
                         </ul>
                         <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                 </div>
+            </div>
+          </div>
+          <!-- body -->
+        </div>
+        <!-- content -->
+
+      </div>
+      <!-- dialog -->
+
+    </div>
+    <!-- modal -->
+
+    <!-- modal -->
+    <div id="portfolioModal3"
+      class="modal animated bounceIn"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="myModalLabel"
+      aria-hidden="true">
+
+      <!-- dialog -->
+      <div class="modal-dialog">
+
+        <!-- content -->
+        <div class="modal-content">
+          <!-- body -->
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-lg-8 col-lg-offset-2">
+                <h2>Weather Application</h2>
+                <hr class="star-primary">
+                <img src="img/WeatherApp.png" class="img-responsive img-centered" alt=""><br><br>
+                <p>This application uses the OpenWeatherApp API to return the current temperature, as well as hourly forecast and five day forecast. It also uses the Google API by returning an auto search of the city or address the user is looking for.
+                </p>
+                
+                <ul class="list-inline item-details">
+                  <li>Client:
+                    <strong><a href="https://github.com/r-ribeiro94/CPS630/tree/master/Lab04">Github</a>
+                    </strong>
+                  </li>
+                  
+                  <li>
+                    <p>Date: <strong>February 2016</strong></p>
+
+                  </li>
+                
+                  <li>
+                    <p>Service: <strong>Web Applications (CPS 630)</strong></p>
+                  </li>
+                </ul>
+
+                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+              </div>
+            </div>
+          </div>
+          <!-- body -->
+        </div>
+        <!-- content -->
+
+      </div>
+      <!-- dialog -->
+
+    </div>
+    <!-- modal -->
+
+      <!-- modal -->
+    <div id="portfolioModal4"
+      class="modal animated bounceIn"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="myModalLabel"
+      aria-hidden="true">
+
+      <!-- dialog -->
+      <div class="modal-dialog">
+
+        <!-- content -->
+        <div class="modal-content">
+          <!-- body -->
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-lg-8 col-lg-offset-2">
+                <h2>TechNews</h2>
+                <hr class="star-primary">
+                <img src="img/TechNews.png" class="img-responsive img-centered" alt=""><br><br>
+                <p>A regular website that has five tech related article and an about me section. It uses HTML5 and CSS3 functionalities, most importantly the media queries that are used in CSS for a responsive design. 
+                </p>
+                
+                <ul class="list-inline item-details">
+                  <li>Client:
+                    <strong><a href="https://github.com/r-ribeiro94/CPS630/tree/master/Lab01">Github</a>
+                    </strong>
+                  </li>
+                  
+                  <li>
+                    <p>Date: <strong>January 2016</strong></p>
+
+                  </li>
+                
+                  <li>
+                    <p>Service: <strong>Web Applications (CPS 630)</strong></p>
+                  </li>
+                </ul>
+
+                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+              </div>
+            </div>
+          </div>
+          <!-- body -->
+        </div>
+        <!-- content -->
+
+      </div>
+      <!-- dialog -->
+
+    </div>
+    <!-- modal -->
+
+    <!-- modal -->
+    <div id="portfolioModal5"
+      class="modal animated bounceIn"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="myModalLabel"
+      aria-hidden="true">
+
+      <!-- dialog -->
+      <div class="modal-dialog">
+
+        <!-- content -->
+        <div class="modal-content">
+          <!-- body -->
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-lg-8 col-lg-offset-2">
+                <h2>About Me</h2>
+                <hr class="star-primary">
+                <img src="img/AboutMe.png" class="img-responsive img-centered" alt=""><br><br><br><br>
+                <p>A website that utilizes the NodeJS and Jade templating. It's just a basic website, with 3 descriptions of web programming/frameworks/operatin systems that interest me. There is also an about section that tells the reader what I like to do on my free time.   
+                </p>
+                
+                <ul class="list-inline item-details">
+                  <li>Client:
+                    <strong><a href="https://github.com/r-ribeiro94/CPS630/tree/master/Lab05">Github</a>
+                    </strong>
+                  </li>
+                  
+                  <li>
+                    <p>Date: <strong>April 2016</strong></p>
+
+                  </li>
+                
+                  <li>
+                    <p>Service: <strong>Web Applications (CPS 630)</strong></p>
+                  </li>
+                </ul>
+
+                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+              </div>
             </div>
           </div>
           <!-- body -->

@@ -139,7 +139,7 @@ hr.star-primary {
 
 @media (max-width: 1440px) {
   .about-section {
-    height: 135%;
+    height: 100%;
   }
 }
 
@@ -161,20 +161,6 @@ hr.star-primary {
    margin: 0 0 24px;
 }
 
-.about-section-left {
-  height: 300px;
-  border-right: 1px solid #383636;
-}
-
-.top-3 {
-  margin-bottom: 18%;
-  font-size: 64px
-}
-
-.middle-3 {
-  font-size: 64px;
-}
-
 span.fancy-hello{
   color: #FF0000; 
   font-family: 'Rouge Script', cursive; 
@@ -191,12 +177,43 @@ span.fancy-hello{
 .skills, .software {
   margin-top: 5%;
 }
+
+/* Services Section - All clases below correspond to the services section. */
+.services-section {
+    height: 50%;
+    padding-top: 25px;
+    text-align: center;
+    background: #fff;
+}
+
+.services-section-left {
+  font-size: 84px;
+}
+
+.services-section-left h1, .services-section-right h1{
+  font-family: 'Rockwell Extra Bold', 'Rockwell Bold', monospace;
+  font-weight: bold;
+}
+
+.services-section-right {
+  font-size: 84px;
+}
+
+.services-section .container hr {
+  border: none;
+  height: 5px;
+  width: 100%;
+  /*Color Change*/
+  color: red;
+  background-color: red;
+}
+
 /* Portfolio Section - All clases below correspond to the portfolio section. */
 .portfolio-section {
     height: 100%;
     padding-top: 150px;
     text-align: center;
-    background: #fff;
+    background: #eee;
 }
 
 #portfolio .portfolio-item {
@@ -388,6 +405,11 @@ button#send {
   color:  #FFF2BC;
   font-size: 20px;
   margin: 0;
+}
+
+.footer-distributed .footer-left .smaller-text {
+  font-size: 14px;
+  font-style: italic;
 }
 
 /* Footer links */
