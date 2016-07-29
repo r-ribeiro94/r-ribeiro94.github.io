@@ -113,9 +113,9 @@ html {
     background: #eee;
 }
 
-@media (max-width: 1440px) {
+@media screen and (max-width: 750px) {
   .about-section {
-    height: 100%;
+    height: 300%;
   }
 }
 
@@ -140,7 +140,7 @@ html {
 span.fancy-hello{
   color: #FF0000; 
   font-family: 'Rouge Script', cursive; 
-  font-size: 36px; 
+  font-size: 64px; 
   font-weight: normal; 
   line-height: 48px; 
   margin: 0 0 50px;
@@ -148,6 +148,12 @@ span.fancy-hello{
   text-align: center; 
   text-shadow: 1px 1px 2px #082b34;
   text-align: left;
+}
+
+@media screen and (max-width: 750px) {
+  span.fancy-hello {
+    margin-left: -65%;
+  }
 }
 
 .skills, .software {
@@ -162,13 +168,13 @@ span.fancy-hello{
     background: #fff;
 }
 
-@media (max-width: 950px) {
+@media screen and (max-width: 750px) {
   .services-section {
-    height: 75%;
+    height: 150%;
   }
 
   .services-section .container hr {
-    margin-top: -22.5%;
+    margin-top: -40%;
   }
   
 }
@@ -205,9 +211,9 @@ span.fancy-hello{
     background: #eee;
 }
 
-@media (max-width: 750px) {
+@media screen and (max-width: 750px) {
   .portfolio-section {
-    height: 150%;
+    height: 200%;
   }
 }
 
