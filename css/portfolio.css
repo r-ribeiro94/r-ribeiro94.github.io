@@ -50,7 +50,8 @@ html {
 
 .navbar-default .navbar-nav > li > a {
     color: #FFF2BC; /*Change active text color here*/
-    font-size: 20px;
+    font-size: 24px;
+    font-family: 'Josefin Slab', serif;
 }
 
 @media(min-width:767px) {
@@ -71,7 +72,8 @@ html {
     height: 100vh;
     min-height: 100%;
     max-height: 100%;
-    background-color: #E45009;
+    /* Credit to negativespace.co */
+    background-image: url(../img/Jumbotron-Wallpaper.jpg);
     background-size: cover;
     color: #FFF2BC;
     text-align: center;
@@ -85,48 +87,22 @@ html {
 
 .custom-jumbo h1 {
     margin-top: 20%;
+    font-family: 'Amatic SC', cursive;
+    font-size: 100px;
 }
 
-/*.custom-jumbo hr{
-    width: 20%;
-    border: none;
-    height: 2.5px;
-    color: #FFF2BC;
-    background-color: #FFF2BC;
-}*/
+.custom-jumbo p{
+  font-family: 'Josefin Slab', serif;
+  font-weight: bold;
+  font-size: 24px;
+}
 
-.custom-jumbo hr.star-light,
-hr.star-primary {
-  padding: 0;
+.custom-jumbo hr {
+  width: 50%;
   border: none;
-  border-top: solid 5px;
-  text-align: center;
-  max-width: 250px;
-  margin: 25px auto 30px;
-}
-.custom-jumbo hr.star-light:after,
-.custom-jumbo hr.star-primary:after {
-  content: "\f108";
-  font-family: FontAwesome;
-  display: inline-block;
-  position: relative;
-  top: -0.8em;
-  font-size: 2em;
-  padding: 0 0.25em;
-}
-.custom-jumbo hr.star-light {
-  border-color: #FFF2BC;
-}
-.custom-jumbo hr.star-light:after {
-  background-color: #E45009;
+  height: 2px;
   color: #FFF2BC;
-}
-.custom-jumbo hr.star-primary {
-  border-color: #FFF2BC;
-}
-.custom-jumbo hr.star-primary:after {
   background-color: #FFF2BC;
-  color: #FFF2BC;
 }
 
 /* About Section - All clases below correspond to the about section. */
@@ -186,10 +162,23 @@ span.fancy-hello{
     background: #fff;
 }
 
+@media (max-width: 950px) {
+  .services-section {
+    height: 75%;
+  }
+
+  .services-section .container hr {
+    margin-top: -22.5%;
+  }
+  
+}
 .services-section-left {
   font-size: 84px;
 }
 
+.services-section-left i, .services-section-right i {
+  opacity: 0;
+}
 .services-section-left h1, .services-section-right h1{
   font-family: 'Rockwell Extra Bold', 'Rockwell Bold', monospace;
   font-weight: bold;
@@ -214,6 +203,12 @@ span.fancy-hello{
     padding-top: 150px;
     text-align: center;
     background: #eee;
+}
+
+@media (max-width: 750px) {
+  .portfolio-section {
+    height: 150%;
+  }
 }
 
 #portfolio .portfolio-item {

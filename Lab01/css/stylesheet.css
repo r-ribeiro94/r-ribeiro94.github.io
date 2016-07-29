@@ -1,0 +1,540 @@
+/*
+    
+    Name: Rogerio Ribeiro 
+    Student #: 500527368
+    CPS 630: Lab 01
+
+*/
+
+/*@import url(//fonts.googleapis.com/css?family=Josefin+Sans&subset=latin,latin-ext);
+@font-face { font-family: 'PlayFair Display'; src: url('../fonts/PlayfairDisplay-Regular.tff');}*/
+
+html, body, div, main, details { 
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0; 
+}
+
+html {
+    background-color: #252839;
+}
+nav a{
+    color: #f2b632;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 14px 10px;
+    text-transform: uppercase;
+    float: right;
+    text-decoration: none;
+    font-family: 'Josefin Sans', "Arial Black", Gadget, sans-serif;
+}
+
+nav li {
+    display: inline;
+    text-decoration: none;
+}
+
+h1 img{ 
+    margin-left: 10px;
+    margin-top: 10px;
+    float: left;
+    display: inline-block;
+    width: 50px;
+}
+
+ul {
+    list-style-type: none;
+    display:inline-block;
+    float:right;
+}
+
+details{
+    display:block;
+    clear:both;
+    position:relative;
+    overflow:hidden;
+    text-align: center;
+    color: #f2b632;
+    margin-top: 5%;
+}
+
+details a{
+    text-decoration: none;
+    text-align: center;
+    outline: none;
+    font-size: 24px;
+    color: #b5b5b7;
+
+}
+
+footer {
+    color: #b5b5b7;
+}
+
+.extra {
+    display: none;
+}
+
+/* Classes */
+.centerimg{
+    background: url('../images/banner_img.jpg') no-repeat center center;
+    background-size: cover;
+    background-size: 100% 100%;
+    height: 500px;
+}
+
+.centerimg .container {
+    position: relative;
+    top: 100px;
+}
+
+.img-circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 150px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.stitched {
+   padding: 20px;
+   margin: 10px;
+   background: #677077;
+   font-size: 21px;
+   font-weight: bold;
+   border: 2px dashed #fff;
+   border-radius: 10px;
+   box-shadow: 0 0 0 4px #677077, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
+   font-weight: normal;
+   text-align: center;
+}
+
+.colors h1{
+    color: #f2b632;
+    text-align: center;
+    font-family: 'Josefin Sans', "Arial Black", Gadget, sans-serif;
+}
+
+.colors p, figcaption{
+    color: #b5b5b7;
+    font-family: 'PlayFair Display', "Times New Roman", Times, serif;
+}
+
+/* IDS */
+section{
+    overflow: hidden;
+}
+section#left {
+    width: 33%;
+    float: left;
+    /*border: 1px solid black;*/
+}
+section#right {
+    float: left;
+    width: 33%;
+    /*border: 1px solid black;*/
+}
+
+section#middle {
+    float: left;
+    width: 33%;
+    /*border: 1px solid black;*/
+}
+
+section#left2 {
+    float: left;
+    width: 25%;
+}
+section#middlelft {
+    float: left;
+    width: 25%;
+
+}
+section#middlerght {
+    float: left;
+    width: 25%;
+}
+section#right2 {
+    float: left;
+    width: 25%;
+}
+
+#right2 h1, p{
+    text-align: center;
+}
+
+#aboutme h1{
+    text-align: center;
+}
+
+#colors h1{
+    color: #f2b632;
+    font-family: 'Josefin Sans', "Arial Black", Gadget, sans-serif;
+}
+
+#colors p{
+    color: #252839;
+    font-family: 'PlayFair Display', "Times New Roman", Times, serif;
+}
+
+#responsive img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 479px){ 
+    
+    h1 img {
+        width: 80%;
+        display: block;
+        margin-left: 5%;
+        margin-right: auto;
+    }
+
+    aside figure img{
+        width: 100%;
+    }
+
+    figure img {
+        width: 50%;
+    }
+
+    /* IDS */
+    section#left {
+        width: 100%;
+    }
+    section#right {
+        width: 100%;
+    }
+    section#middle {
+        width: 100%;
+    }
+    section#left2 {
+        width: 100%;
+    }
+    section#middlelft {
+        width: 100%;
+    }
+    section#middlerght {
+        width: 100%;
+    }
+    section#right2 {
+        width: 100%;
+    }
+
+    #responsive img{
+        width: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+     #aboutme {
+        font-size: 100%;
+    }
+
+    #colors h1 {
+        font-size: 150%;
+    }
+
+    /* Classes */
+    .img-circle{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .container {
+        font-size: 100%;
+    }
+
+    .stitched {
+        font-size: 100%;
+    }
+
+    .centerimg{
+        width: 100%;
+        height: 35%;
+    }
+
+    .colors h1 {
+        font-size: 150%;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px){ 
+
+    h1 img {
+        width: 10%;
+    }
+
+    aside figure img{
+        width: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    figure img {
+        width: 100%;
+    }
+
+    figcaption {
+        text-align: center;
+    }
+
+    article a img {
+        width: 50%;
+    }
+
+    /* IDS */
+    section#left {
+        width: 100%;
+    }
+    section#right {
+        width: 100%;
+    }
+    section#middle {
+        width: 100%;
+    }
+    section#left2 {
+        width: 100%;
+    }
+    section#middlelft {
+        width: 100%;
+    }
+    section#middlerght {
+        width: 100%;
+    }
+    section#right2 {
+        width: 100%;
+    }
+
+    #responsive img{
+        width: 30%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #aboutme {
+        font-size: 100%;
+    }
+
+    #colors h1{
+        color: #f2b632;
+        font-size: 350%;
+    }
+
+    #colors p{
+        color: #252839;
+        font-size: 200%;
+    }
+
+    /* Classes */
+    .img-circle{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .container {
+        font-size: 100%;
+    }
+
+    .stitched {
+        font-size: 50%;
+    }
+
+    .centerimg{
+        width: 100%;
+        height: 50%
+    }
+
+    .colors h1 {
+        color: #f2b632;
+        font-size: 150%;
+    }
+
+    .colors p {
+        color: #b5b5b7;
+        font-size: 100%;
+    }
+
+    .centerimg{
+        width: 100%;
+        height: 50%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px){ 
+    h1 img {
+        width: 20%;
+        margin-bottom: 5%;
+    }
+
+    aside figure img{
+        width: 100%;
+    }
+
+    nav a{
+        font-size: 200%;
+    }
+
+    details {
+        font-size: 150%;
+    }
+
+    figure img {
+        width: 50%;
+    }
+
+    /* IDS */
+    section#left {
+        width: 50%;
+    }
+    section#right {
+        width: 100%;
+    }
+    section#middle {
+        width: 50%;
+    }
+    section#left2 {
+        width: 100%;
+    }
+    section#middlelft {
+        width: 100%;
+    }
+    section#middlerght {
+        width: 100%;
+    }
+    section#right2 {
+        width: 100%;
+    }
+
+    #responsive img{
+        width: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #aboutme {
+        font-size: 200%;
+    }
+
+    #colors h1{
+        color: #f2b632;
+        font-size: 200%;
+    }
+
+    /* Classes */
+    .img-circle{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .container {
+        font-size: 100%;
+    }
+
+    .stitched {
+        font-size: 200%;
+    }
+
+    .colors h1 {
+        font-size: 250%;
+    }
+    .colors p{
+        font-size: 150%;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1999px){
+    h1 img {
+        width: 10%;
+        margin-bottom: 5%;
+    }
+
+    aside figure img{
+        width: 100%;
+    }
+
+    nav a{
+        font-size: 150%;
+    }
+
+    details {
+        font-size: 200%;
+    }
+
+    figure img {
+        width: 50%;
+    }
+    /* IDS */
+    section#left {
+        width: 33%;
+    }
+    section#right {
+        width: 33%;
+    }
+    section#middle {
+        width: 33%;
+    }
+    section#left2 {
+        width: 25%;
+    }
+    section#middlelft {
+        width: 25%;
+    }
+    section#middlerght {
+        width: 25%;
+    }
+    section#right2 {
+        width: 25%;
+    }
+
+    #responsive img{
+        width: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #aboutme {
+        font-size: 100%;
+    }
+
+    #colors h1{
+        color: #f2b632;
+        font-size: 200%;
+    }
+
+    /* Classes */
+    .img-circle{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .container {
+        font-size: 100%;
+    }
+
+    .stitched {
+        font-size: 125%;
+    }
+
+    .colors h1 {
+        font-size: 200%;
+    }
+    .colors p{
+        font-size: 125%;
+    }
+}
