@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title> Lab 02 - Weather App </title>
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false&libraries=places&language=en"></script>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/weather-icons.min.css">
+		<link href='http://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	</head>
+
+	<body>
+		<main id="wrap">
+
+			<div class="form-wrapper cf" id="searchBar">
+				<input type="text" class="search" id="userCity" placeholder="Enter a city...">
+				<button type="submit" onclick="getLocationAndWeather()">Search</button>
+			</div>
+
+			<h1 id ="city"></h1>
+			
+			<!-- Current -->
+			<section id="margin-0">
+				<section id="hour0">
+					<h1 id="h0">Current Weather</h1>
+					<p id="time0"></p>
+					<p id="icon0"></p>
+					<p id="temp0"></p>					
+					<div id="convertWrap">
+						<input type="radio" name="choice" id="c" value="celsius" checked>°C
+				        <input type="radio" name="choice" id="f" value="fahrenheit"/>°F
+				        <input type="button" value="Convert" class="button" onclick="switchUnits()">
+				    </div>
+					<p id="weather0"></p>
+					<p id="humd0"></p>
+					<p id="wind0"></p>
+				</section>
+			</section>
+
+			<!-- Hours -->
+			<h1>Hourly Forecast</h1>
+			<section id="margin-1">
+				<section id="hour1">
+					<p id="time1"></p>	
+					<p id="icon1"></p>
+					<p id="temp1"></p>
+				</section>
+				<section id="hour2">
+					<p id="time2"></p>
+					<p id="icon2"></p>
+					<p id="temp2"></p>
+				</section>
+				<section id="hour3">
+					<p id="time3"></p>
+					<p id="icon3"></p>
+					<p id="temp3"></p>
+				</section>
+				<section id="hour4">
+					<p id="time4"></p>
+					<p id="icon4">
+					<p id="temp4"></p>
+				</section>
+			</section>
+
+			<!-- Days -->
+			<h1> 5 Day Forecast</h1>
+			<section id="margin-2">
+				<section id="day1">
+					<p id="dayT1"></p>
+					<p id="dayI1"></p>
+					<p id="dayTe1"></p>
+					<p id="dayW1"></p>
+					<p id="dayH1"></p>
+					<p id="dayWi1"></p>
+				</section>
+				<section id="day2">
+					<p id="dayT2"></p>
+					<p id="dayI2"></p>
+					<p id="dayTe2"></p>
+					<p id="dayW2"></p>
+					<p id="dayH2"></p>
+					<p id="dayWi2"></p>
+				</section>
+				<section id="day3">
+					<p id="dayT3"></p>
+					<p id="dayI3"></p>
+					<p id="dayTe3"></p>
+					<p id="dayW3"></p>
+					<p id="dayH3"></p>
+					<p id="dayWi3"></p>
+				</section>
+				<section id="day4">
+					<p id="dayT4"></p>
+					<p id="dayI4"></p>
+					<p id="dayTe4"></p>
+					<p id="dayW4"></p>
+					<p id="dayH4"></p>
+					<p id="dayWi4"></p>
+				</section>
+				<section id="day5">
+					<p id="dayT5"></p>
+					<p id="dayI5"></p>
+					<p id="dayTe5"></p>
+					<p id="dayW5"></p>
+					<p id="dayH5"></p>
+					<p id="dayWi5"></p>
+				</section>
+			</section>
+
+		</main>
+
+		<footer>
+			<p> Powered by: <a href="http://openweathermap.org">OpenWeatherMap</a> and Created by: Rogerio Ribeiro</p>
+		</footer>
+
+		<script src="js/script.js"></script>
+	</body>
+</html>

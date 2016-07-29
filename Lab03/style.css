@@ -1,0 +1,29 @@
+
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+#holderText {
+	text-align:center;
+	margin-top: 35%;
+	margin-bottom: 35%;
+}
+#map {
+	height: 50%;
+	width: 50%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#holder { 
+	border: 10px dashed #ccc; 
+	width: 300px; 
+	height: 300px; 
+	margin: 20px auto;
+}
+s
+#holder.hover { 
+	border: 10px dashed #333; 
+}

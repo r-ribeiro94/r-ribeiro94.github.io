@@ -1,0 +1,716 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+    background: url('../images/background.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+        /*overflow: hidden;*/
+}
+
+
+h1 {
+    text-align: center;
+    color: #F0F8FF;
+    font-family: 'Bree Serif';
+    margin-bottom: 2.5%;
+}
+
+form {
+    text-align: center;
+    margin-bottom: 2.5%;
+}
+
+footer {
+    color: #F0F8FF;
+    text-align: center;
+    font-family: "Open Sans";
+}
+
+footer a {
+    text-decoration: none;
+    color: #F0F8FF;
+}
+
+/* Classes */
+.button {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 5px 16px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin-left: 1%;
+    margin-bottom: 1.5%;
+}
+
+/* Ids */
+
+#margin-0 {
+    margin-bottom: 2.5%;
+    border-style: dotted;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    font-family: "Open Sans";
+    overflow: hidden;
+}
+
+#margin-1 {
+	margin-bottom: 5%;
+    margin-left: 30%;
+    margin-right: 30%;
+    font-family: "Open Sans";
+    overflow: hidden;
+}
+
+#margin-2 {
+	margin-bottom: 2.5%;
+    margin-left: 10.5%;
+    margin-right: 10.5%;
+    font-family: "Open Sans";
+    overflow: hidden;
+}
+
+#city {
+	text-align: center;
+}
+
+#h0, #time0 {
+    font-family: 'Bree Serif';
+    text-align: left;
+    margin-left: 2.5%;
+    margin-bottom: 2%;
+    color: white;
+}
+
+#temp0, #icon0 {
+    text-align: center;
+    font-size: 32px;
+}
+
+#convertWrap {
+    text-align: center;
+    font-size: 16px;
+}
+
+#time1, #time2, #time3, #time4, #time5 {
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+}
+
+#dayT1, #dayT2, #dayT3, #dayT4, #dayT5 {
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+}
+
+#dayT1:empty, #dayT2:empty, #dayT3:empty, #dayT4:empty, #dayT5:empty {
+    display: none;
+}
+
+#icon1, #icon2, #icon3, #icon4, #icon5 {
+    margin-top: 3.5%;
+}
+
+#icon6, #icon14, #icon22, #icon30, #icon38 {
+    margin-top: 2.5%;
+}
+
+p#weather0, p#humd0, p#wind0 {
+    float: left;
+    width: 22.5%;
+    margin-left: 10%;
+}
+
+section#hour0 {
+    font-size: 24px;
+}
+
+
+section#hour1 {
+    float: left;
+    width: 22.5%;
+    text-align: center;
+    margin-right: 2.5%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    color: #E0E0E0;
+}
+
+section#hour2 {
+    float: left;
+    width: 22.5%;
+    text-align: center;
+    margin-right: 2.5%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    color: #E0E0E0;
+}
+
+section#hour3 {
+    float: left;
+    width: 22.5%;
+    text-align: center;
+    margin-right: 2.5%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    color: #E0E0E0;
+}
+
+section#hour4 {
+    float: left;
+    width: 22.5%;
+    text-align: center;
+    margin-right: 2.5%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    color: #E0E0E0;
+}
+
+section#day1{
+    float: left;
+    width: 16%;
+    background-color: white;
+    margin-right: .5%;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+section#day1:empty {
+    display: none;
+}
+
+section#day2 {
+    float: left;
+    width: 16%;
+    background-color: white;
+    margin-right: .5%;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+section#day2:empty {
+    display: none;
+}
+
+section#day3 {
+    float: left;
+    width: 16%;
+    background-color: white;
+    margin-right: .5%;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+section#day3:empty {
+    display: none;
+}
+
+section#day4 {
+    float: left;
+    width: 16%;
+    background-color: white;
+    margin-right: .5%;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+section#day4:empty {
+    display: none;
+}
+
+section#day5 {
+	float: left;
+	width: 16%;
+    background-color: white;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+
+section#day5:empty {
+    display: none;
+}
+
+ /*Smartphones portrait mode */
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+
+    #searchBar {
+        margin-left: 12.5%;
+        margin-bottom: 5%;
+        margin-top: 5%;
+    }
+
+    .search {
+        padding:8px 15px;
+        background:rgba(50, 50, 50, 0.2);
+        border:0px solid #dbdbdb;
+        color: white;
+    }
+
+    button {
+        position:relative;
+        padding:6px 15px;
+        left:-8px;
+        border:2px solid #207cca;
+        background-color:#207cca;
+        color:#fafafa;
+    }
+
+    section#hour1 {
+        width: 100%;
+    }
+
+    section#hour2 {
+        width: 100%;
+    }
+
+    section#hour3 {
+        width: 100%;
+    }
+
+    section#hour4 {
+        width: 100%;
+    }
+
+    section#day1{
+        width: 100%;
+    }
+
+    section#day2 {
+        width: 100%;
+    }
+
+    section#day3 {
+        width: 100%;
+    }
+
+    section#day4 {
+        width: 100%;
+    }
+
+    section#day5 {
+        width: 100%;
+    }
+
+    #temp0, #icon0 {
+        margin-bottom: 5%; 
+    }
+
+    ::-webkit-input-placeholder { /* For WebKit browsers */
+        color:    white;
+        font: bold 15px 'lucida sans', 'trebuchet MS', 'Tahoma';
+        font-weight:bold;
+    }
+
+    :-moz-placeholder { /* For Mozilla Firefox 4 to 18 */
+        color:    white;
+        font: bold 15px 'lucida sans', 'trebuchet MS', 'Tahoma';
+        font-weight:bold;
+    }
+
+    ::-moz-placeholder { /* For Mozilla Firefox 19+ */
+        color:    white;
+        font: bold 15px 'lucida sans', 'trebuchet MS', 'Tahoma';
+        font-weight:bold;
+    }
+
+    :-ms-input-placeholder { /* For Internet Explorer 10+ */
+        color:    #dd3333;
+        font: bold 15px 'lucida sans', 'trebuchet MS', 'Tahoma';
+        font-weight:bold;
+    }
+
+}
+
+/* Landscape mode for mobiles and Tablet screens in portrait */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+    #margin-2 {
+        margin-left: 25%;
+    }
+
+    p#weather0, p#humd0, p#wind0 {
+        float: left;
+        width: 27%;
+        margin-left: 6%;
+    }
+
+    #searchBar {
+        margin-left: 30%;
+        margin-bottom: 5%;
+        margin-top: 5%;
+    }
+
+    .search {
+        padding:8px 15px;
+        background:rgba(50, 50, 50, 0.2);
+        border:0px solid #dbdbdb;
+        color: white;
+    }
+
+    button {
+        position:relative;
+        padding:6px 15px;
+        left:-8px;
+        border:2px solid #207cca;
+        background-color:#207cca;
+        color:#fafafa;
+    }
+
+    section#hour1 {
+        width: 100%;
+    }
+
+    section#hour2 {
+        width: 100%;
+    }
+
+    section#hour3 {
+        width: 100%;
+    }
+
+    section#hour4 {
+        width: 100%;
+    }
+
+    section#day1{
+        width: 40%;
+    }
+
+    section#day2 {
+        width: 40%;
+    }
+
+    section#day3 {
+        margin-top: 2.5%;
+        width: 40%;
+    }
+
+    section#day4 {
+        margin-top: 2.5%;
+        width: 40%;
+    }
+
+    section#day5 {
+        margin-top: 2.5%;
+        width: 80%;
+    }
+
+    ::-webkit-input-placeholder { /* For WebKit browsers */
+        color:    white;
+        font: bold 15px 'lucida sans', 'trebuchet MS', 'Tahoma';
+        font-weight:bold;
+    }
+
+    :-moz-placeholder { /* For Mozilla Firefox 4 to 18 */
+        color:    white;
+        font: bold 15px 'lucida sans', 'trebuchet MS', 'Tahoma';
+        font-weight:bold;
+    }
+
+    ::-moz-placeholder { /* For Mozilla Firefox 19+ */
+        color:    white;
+        font: bold 15px 'lucida sans', 'trebuchet MS', 'Tahoma';
+        font-weight:bold;
+    }
+
+    :-ms-input-placeholder { /* For Internet Explorer 10+ */
+        color:    #dd3333;
+        font: bold 15px 'lucida sans', 'trebuchet MS', 'Tahoma';
+        font-weight:bold;
+    }
+}
+
+/* Low-Res Laptops and Tablets in Landscape Mode*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    
+    #margin-0{
+        width: 95%;
+    }
+
+    #margin-1{
+        margin-left: 30%;
+    }
+    #margin-2 {
+        margin-left: 22.5%;
+    }
+
+    p#weather0, p#humd0, p#wind0 {
+        margin-left: 10%;
+    }
+
+    /* Take from http://speckyboy.com/2012/02/15/how-to-build-a-stylish-css3-search-box/ with minor modifications.*/
+    .cf:before, .cf:after{
+        content:"";
+        display:table;
+    }
+
+    .cf:after{
+        clear:both;
+    }
+
+    .cf{
+        zoom:1;
+    }    
+
+    /* Form wrapper styling */
+    .form-wrapper {
+        width: 450px;
+        padding: 15px;
+        margin: 5% auto 5% auto;
+        background: #444;
+        background: rgba(0,0,0,.2);
+        border-radius: 10px;
+        box-shadow: 0 1px 1px rgba(0,0,0,.4) inset, 0 1px 0 rgba(255,255,255,.2);
+    }
+
+    /* Form text input */
+
+    .form-wrapper input {
+        width: 330px;
+        height: 20px;
+        padding: 10px 5px;
+        color: #000000;
+        float: left;    
+        font: bold 15px 'lucida sans', 'trebuchet MS', 'Tahoma';
+        border: 0;
+        background: #eee;
+        border-radius: 3px 0 0 3px;      
+    }
+
+    .form-wrapper input:focus {
+        outline: 0;
+        background: #fff;
+        box-shadow: 0 0 2px rgba(0,0,0,.8) inset;
+    }
+
+    .form-wrapper input::-webkit-input-placeholder {
+       color: #999;
+       font-weight: normal;
+       font-style: italic;
+    }
+
+    .form-wrapper input:-moz-placeholder {
+        color: #999;
+        font-weight: normal;
+        font-style: italic;
+    }
+
+    .form-wrapper input:-ms-input-placeholder {
+        color: #999;
+        font-weight: normal;
+        font-style: italic;
+    }    
+
+    /* Form submit button */
+    .form-wrapper button {
+        overflow: visible;
+        position: relative;
+        float: right;
+        border: 0;
+        padding: 0;
+        cursor: pointer;
+        height: 40px;
+        width: 110px;
+        font: bold 15px/40px 'lucida sans', 'trebuchet MS', 'Tahoma';
+        color: #fff;
+        text-transform: uppercase;
+        background: #999999;
+        border-radius: 0 3px 3px 0;      
+        text-shadow: 0 -1px 0 rgba(0, 0 ,0, .3);
+    }   
+      
+    .form-wrapper button:hover{     
+        background: #e54040;
+    }   
+      
+    .form-wrapper button:active,
+    .form-wrapper button:focus{   
+        background: #c42f2f;
+        outline: 0;   
+    }
+
+    .form-wrapper button:before { /* left arrow */
+        content: '';
+        position: absolute;
+        border-width: 8px 8px 8px 0;
+        border-style: solid solid solid none;
+        border-color: transparent #999999 transparent;
+        top: 12px;
+        left: -6px;
+    }
+
+    .form-wrapper button:hover:before{
+        border-right-color: #e54040;
+    }
+
+    .form-wrapper button:focus:before,
+    .form-wrapper button:active:before{
+            border-right-color: #c42f2f;
+    }      
+
+    .form-wrapper button::-moz-focus-inner { /* remove extra button spacing for Mozilla Firefox */
+        border: 0;
+        padding: 0;
+    }    
+}
+
+
+@media (min-width: 992px) {
+    #margin-0 {
+        width: 95%;
+    }
+
+    #margin-1 {
+        width: 50%;
+        margin-left: 28%;
+    }
+
+    #margin-2 {
+        width: 100%;
+        margin-top: 2.5%;
+        margin-left: 10%;
+    }
+
+    p#weather0, p#humd0, p#wind0 {
+        float: left;
+        width: 19%;
+        margin-left: 14%;
+    }
+
+    /* Take from http://speckyboy.com/2012/02/15/how-to-build-a-stylish-css3-search-box/ with minor modifications.*/
+    .cf:before, .cf:after{
+        content:"";
+        display:table;
+    }
+
+    .cf:after{
+        clear:both;
+    }
+
+    .cf{
+        zoom:1;
+    }    
+
+    /* Form wrapper styling */
+    .form-wrapper {
+        width: 450px;
+        padding: 15px;
+        margin: 5% auto 5% auto;
+        background: #444;
+        background: rgba(0,0,0,.2);
+        border-radius: 10px;
+        box-shadow: 0 1px 1px rgba(0,0,0,.4) inset, 0 1px 0 rgba(255,255,255,.2);
+    }
+
+    /* Form text input */
+
+    .form-wrapper input {
+        width: 330px;
+        height: 20px;
+        padding: 10px 5px;
+        color: #000000;
+        float: left;    
+        font: bold 15px 'lucida sans', 'trebuchet MS', 'Tahoma';
+        border: 0;
+        background: #eee;
+        border-radius: 3px 0 0 3px;      
+    }
+
+    .form-wrapper input:focus {
+        outline: 0;
+        background: #fff;
+        box-shadow: 0 0 2px rgba(0,0,0,.8) inset;
+    }
+
+    .form-wrapper input::-webkit-input-placeholder {
+       color: #999;
+       font-weight: normal;
+       font-style: italic;
+    }
+
+    .form-wrapper input:-moz-placeholder {
+        color: #999;
+        font-weight: normal;
+        font-style: italic;
+    }
+
+    .form-wrapper input:-ms-input-placeholder {
+        color: #999;
+        font-weight: normal;
+        font-style: italic;
+    }    
+
+    /* Form submit button */
+    .form-wrapper button {
+        overflow: visible;
+        position: relative;
+        float: right;
+        border: 0;
+        padding: 0;
+        cursor: pointer;
+        height: 40px;
+        width: 110px;
+        font: bold 15px/40px 'lucida sans', 'trebuchet MS', 'Tahoma';
+        color: #fff;
+        text-transform: uppercase;
+        background: #999999;
+        border-radius: 0 3px 3px 0;      
+        text-shadow: 0 -1px 0 rgba(0, 0 ,0, .3);
+    }   
+      
+    .form-wrapper button:hover{     
+        background: #e54040;
+    }   
+      
+    .form-wrapper button:active,
+    .form-wrapper button:focus{   
+        background: #c42f2f;
+        outline: 0;   
+    }
+
+    .form-wrapper button:before { /* left arrow */
+        content: '';
+        position: absolute;
+        border-width: 8px 8px 8px 0;
+        border-style: solid solid solid none;
+        border-color: transparent #999999 transparent;
+        top: 12px;
+        left: -6px;
+    }
+
+    .form-wrapper button:hover:before{
+        border-right-color: #e54040;
+    }
+
+    .form-wrapper button:focus:before,
+    .form-wrapper button:active:before{
+            border-right-color: #c42f2f;
+    }      
+
+    .form-wrapper button::-moz-focus-inner { /* remove extra button spacing for Mozilla Firefox */
+        border: 0;
+        padding: 0;
+    }    
+}
+}

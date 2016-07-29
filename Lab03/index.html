@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Lab3</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+
+  	<article>
+  		<section id="holder">
+          <p id="holderText"> Drag and drop your file, must be in this format. (ex: -45.0000,5.0000) </p> 
+      </section>
+  	</article>
+
+  	<div id="map"></div>
+    <button onclick="getHaversine()"> Get Haversine </button>
+    <button onclick="stopWorker()"> Stop Worker </button>
+
+    <script src="script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDRprCcQLctCXVKQy2AnPBCGtJ4gjz1H-A"> </script>
+    <script>      
+      function getHaversine() {
+        worker.postMessage({'userLat': storedValues.userLat, 'userLng': storedValues.userLng, 'fileLat': storedValues.fileLat, 'fileLng': storedValues.fileLng, 'distance': 0});
+      }
+
+      function stopWorker() {
+        worker.terminate();
+      }
+      var worker = new Worker('worker.js');
+
+      worker.addEventListener('message', function(e) {
+        alert("Your distance from current location to the location in file is: " + e.data + "km");
+      }, false);
+      </script>
+  </body>
+
+</html>

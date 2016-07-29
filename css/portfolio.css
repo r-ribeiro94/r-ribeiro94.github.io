@@ -313,8 +313,11 @@ span.fancy-hello{
   overflow: auto;
 }
 
+/***************************************************************************/
+/*            NEED TO GET A HOST THAT SUPPORTS PHP POSTING                */
+/*************************************************************************/
 /* Contact Section - All clases below correspond to the portfolio section. */
-.contact-section {
+/*.contact-section {
     height: 100%;
     padding-top: 150px;
     text-align: center;
@@ -389,7 +392,7 @@ input#name, input#email, input#subject, textarea#message {
 button#send {
   background-color: #FF5A0B;
   border-color: #FF5A0B;
-}
+}*/
 
 .footer-distributed{
   background-color: #383636;
@@ -440,8 +443,6 @@ button#send {
 
   margin-left: 3px;
 }
-
-/* If you don't want the footer to be responsive, remove these media queries */
 
 @media (max-width: 600px) {
 

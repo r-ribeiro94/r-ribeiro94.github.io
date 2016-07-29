@@ -1,0 +1,13 @@
+Name: Rogerio Ribeiro
+Course: CPS 630
+Student Number: 500527368
+
+This folder consists of three files, index.html, worker.js, script.js, and style.css. 
+
+Everything can be seen on index.html, must run a localhost to get the html to be fully functional. It does not work on mobile phones because drag and drop is not supported on smartphones. The 'Get Haversine' button will return the distance between locations.
+
+Worker.js is used to calculated the haversine distance, of locations. 
+
+Script.js uses the google maps api, to show both locations on the map, must click markers to get information.
+
+Style.css is just for cosmetics.
