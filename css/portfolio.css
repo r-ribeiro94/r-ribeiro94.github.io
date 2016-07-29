@@ -156,6 +156,11 @@ span.fancy-hello{
   }
 }
 
+@media screen and (max-width: 1024px) {
+  span.fancy-hello {
+    margin-left: -80%;
+  }
+
 .skills, .software {
   margin-top: 5%;
 }
@@ -178,6 +183,17 @@ span.fancy-hello{
   }
   
 }
+
+@media screen and (max-width: 1024px){
+  .services-section {
+    height: 70%;
+  }
+
+  .services-section .container hr {
+    margin-top: -20%;
+  }
+}
+
 .services-section-left {
   font-size: 84px;
 }
