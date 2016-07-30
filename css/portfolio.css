@@ -221,7 +221,7 @@ span.fancy-hello{
   
 }
 
-@media screen and (min-width: 400px) and (max-width: 574px){
+@media screen and (min-width: 400px) and (max-width: 465px){
   .services-section {
     height: 175%;
   }
@@ -235,7 +235,19 @@ span.fancy-hello{
   }
 }
 
+@media screen and (min-width: 466px) and (max-width: 574px) {
+  .services-section {
+    height: 145%;
+  }
 
+  .services-section .container hr {
+    margin-top: -17.5%;
+  }
+
+  .services-section-left i, .services-section-right i {
+    opacity: 1;
+  }
+}
 @media screen and (min-width: 575px) and (max-width: 765px){
   .services-section {
     height: 135%;
