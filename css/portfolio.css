@@ -113,12 +113,17 @@ html {
     background: #eee;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 400px) {
   .about-section {
     height: 300%;
   }
 }
 
+@media screen and (max-width: 765px) {
+  .about-section {
+    height: 300%;
+  }
+}
 .about-section h3 { 
   color: #383636; 
   font-family: 'Julius Sans One', sans-serif; 
@@ -150,16 +155,17 @@ span.fancy-hello{
   text-align: left;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (min-width: 0px) and (max-width: 450px) {
   span.fancy-hello {
     margin-left: -65%;
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 451px) and (max-width: 765px) {
   span.fancy-hello {
-    margin-left: -80%;
+    margin-left: -65%;
   }
+}
 
 .skills, .software {
   margin-top: 5%;
@@ -173,34 +179,11 @@ span.fancy-hello{
     background: #fff;
 }
 
-@media screen and (max-width: 750px) {
-  .services-section {
-    height: 150%;
-  }
-
-  .services-section .container hr {
-    margin-top: -40%;
-  }
-  
-}
-
-@media screen and (max-width: 1024px){
-  .services-section {
-    height: 70%;
-  }
-
-  .services-section .container hr {
-    margin-top: -20%;
-  }
-}
-
 .services-section-left {
   font-size: 84px;
 }
 
-.services-section-left i, .services-section-right i {
-  opacity: 0;
-}
+
 .services-section-left h1, .services-section-right h1{
   font-family: 'Rockwell Extra Bold', 'Rockwell Bold', monospace;
   font-weight: bold;
@@ -219,6 +202,53 @@ span.fancy-hello{
   background-color: red;
 }
 
+.services-section-left i, .services-section-right i {
+  opacity: 0;
+}
+
+@media screen and (min-width: 0px) and (max-width: 400px) {
+  .services-section {
+    height: 225%;
+  }
+
+  .services-section .container hr {
+    margin-top: -35%;
+  }
+
+  .services-section-left i, .services-section-right i {
+    opacity: 1;
+  }
+  
+}
+
+@media screen and (min-width: 400px) and (max-width: 574px){
+  .services-section {
+    height: 175%;
+  }
+
+  .services-section .container hr {
+    margin-top: -17.5%;
+  }
+
+  .services-section-left i, .services-section-right i {
+    opacity: 1;
+  }
+}
+
+
+@media screen and (min-width: 575px) and (max-width: 765px){
+  .services-section {
+    height: 135%;
+  }
+
+  .services-section .container hr {
+    margin-top: -17.5%;
+  }
+
+  .services-section-left i, .services-section-right i {
+    opacity: 1;
+  }
+}
 /* Portfolio Section - All clases below correspond to the portfolio section. */
 .portfolio-section {
     height: 100%;
@@ -227,9 +257,16 @@ span.fancy-hello{
     background: #eee;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (min-width: 0px) and (max-width: 362px){
   .portfolio-section {
-    height: 200%;
+    height: 250%;
+  }
+}
+
+
+@media screen and (min-width: 363px) and (max-width: 765px) {
+  .portfolio-section {
+    height: 300%;
   }
 }
 
