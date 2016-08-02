@@ -136,9 +136,15 @@ span {
     background: #eee;
 }
 
-@media screen and (min-width: 0px) and (max-width: 450px) {
+@media screen and (min-width: 0px) and (max-width: 399px) {
     .about-section {
-      height: 250%;
+      height: 315%;
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 450px) {
+    .about-section {
+      height: 285%;
     }
 }
 
@@ -206,7 +212,7 @@ span.fancy-hello{
   .polaroid{
     position: relative;
     width: 100%;
-    margin-left: 0;
+    margin-left: 2.5%;
     margin-top: 0;
   }
 }
