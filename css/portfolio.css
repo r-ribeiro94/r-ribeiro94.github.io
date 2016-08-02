@@ -130,7 +130,7 @@ span {
 
 /* About Section - All clases below correspond to the about section. */
 .about-section {
-    height: 125%;
+    height: 100%;
     padding-top: 150px;
     text-align: center;
     background: #eee;
@@ -228,7 +228,6 @@ span.fancy-hello{
     margin-top: 0;
   }
 }
-
 
 .polaroid img {
   border: 10px solid #fff;
