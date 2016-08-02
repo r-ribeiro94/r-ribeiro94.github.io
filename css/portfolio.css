@@ -14,6 +14,19 @@ html {
     height: 100%;
 }
 
+/*Page Loader Content*/
+#quote {
+  text-align: center;
+  font-family: 'Lobster Two', cursive;
+  font-size: 24px;
+  color: #383636;
+}
+
+span {
+  color: grey;
+  font-style: italic;
+}
+
 /*.navbar {
     background-color: #383636;
     border: none;
@@ -73,7 +86,7 @@ html {
     min-height: 100%;
     max-height: 100%;
     /* Credit to negativespace.co */
-    background-image: url(../img/Jumbotron-Wallpaper.jpg);
+    background-image: url(../img/Jumbotron-Wallpaper.png);
     background-size: cover;
     color: #FFF2BC;
     text-align: center;
@@ -107,7 +120,7 @@ html {
 
 /* About Section - All clases below correspond to the about section. */
 .about-section {
-    height: 100%;
+    height: 125%;
     padding-top: 150px;
     text-align: center;
     background: #eee;
@@ -171,9 +184,34 @@ span.fancy-hello{
   margin-top: 5%;
 }
 
+/*Profile Picture [Credit to: https://designshack.net/articles/css/4-fun-css-image-effects-you-can-copy-and-paste/ (DesignShack)]*/
+.polaroid {
+  position: relative;
+  width: 30%;
+  margin-left: 20%;
+  margin-top: 15%;
+}
+
+.polaroid img {
+  border: 10px solid #fff;
+  border-bottom: 45px solid #fff;
+  -webkit-box-shadow: 3px 3px 3px #777;
+     -moz-box-shadow: 3px 3px 3px #777;
+          box-shadow: 3px 3px 3px #777;
+}
+
+.polaroid p {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  bottom: 0px;
+  font: 400 18px/1 'Kaushan Script', cursive;
+  color: #888;
+}
+
 /* Services Section - All clases below correspond to the services section. */
 .services-section {
-    height: 50%;
+    height: 75%;
     padding-top: 25px;
     text-align: center;
     background: #fff;
@@ -185,7 +223,7 @@ span.fancy-hello{
 
 
 .services-section-left h1, .services-section-right h1{
-  font-family: 'Rockwell Extra Bold', 'Rockwell Bold', monospace;
+  font-family: 'Rokkit', monospace, serif;
   font-weight: bold;
 }
 
@@ -261,9 +299,10 @@ span.fancy-hello{
     opacity: 1;
   }
 }
+
 /* Portfolio Section - All clases below correspond to the portfolio section. */
 .portfolio-section {
-    height: 100%;
+    height: 115%;
     padding-top: 150px;
     text-align: center;
     background: #eee;

@@ -1,526 +1,535 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
+	<head>
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <meta name="description" content="">
+	    <meta name="author" content="">
 
-<head>
+	    <title>Rogerio's Portfolio</title>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+	    <!-- Bootstrap Core CSS -->
+	    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <title>Rogerio's Portfolio</title>
+	    <!-- Custom CSS -->
+	    <link href="css/portfolio.css" rel="stylesheet">
 
-    <!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	    <!-- Fonts -->
+	    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	    <link href="vendor/devicon-master/devicon.min.css" rel="stylesheet" type="text/css">
+	    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Josefin+Slab|Rouge+Script|Amaranth|Julius+Sans+One|Kaushan+Script|Rokkitt|Lobster+Two" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="vendor/PagePreloadingEffect/css/effect1.css" />
+		<script src="vendor/PagePreloadingEffect/js/modernizr.custom.js"></script>
+	</head>
+	<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+		<div id="ip-container" class="ip-container">
+			<!-- initial header -->
+			<header class="ip-header">
+				<div class="ip-loader">
+					<p id="quote">"Technology is just a tool.<br>
+						In terms of getting the kids working together and
+						motivating them, the teacher<br>
+						is the most important."<br> <span>-Bill Gates</span></p>
+					<svg class="ip-inner" width="60px" height="60px" viewBox="0 0 80 80">
+						<path class="ip-loader-circlebg" d="M40,10C57.351,10,71,23.649,71,40.5S57.351,71,40.5,71 S10,57.351,10,40.5S23.649,10,40.5,10z"/>
+						<path id="ip-loader-circle" class="ip-loader-circle" d="M40,10C57.351,10,71,23.649,71,40.5S57.351,71,40.5,71 S10,57.351,10,40.5S23.649,10,40.5,10z"/>
+					</svg>
+				</div>
+			</header>
+			<!-- main content -->
+			<div class="ip-main">
+				<!-- Navigation -->
+			    <nav class="navbar" role="navigation">
+			        <div class="container">
+			            <div class="navbar-header page-scroll">
+			                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+			                    <span class="sr-only">Toggle navigation</span>
+			                    <span class="icon-bar"></span>
+			                    <span class="icon-bar"></span>
+			                    <span class="icon-bar"></span>
+			                </button>
+			            </div>
 
-    <!-- Custom CSS -->
-    <link href="css/portfolio.css" rel="stylesheet">
+			            <!-- Collect the nav links, forms, and other content for toggling -->
+			            <div class="collapse navbar-collapse navbar-ex1-collapse navbar-right">
+			                <ul class="nav navbar-nav">
+			                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+			                    <li class="hidden">
+			                        <a class="page-scroll" href="#page-top">Home</a>
+			                    </li>
+			                    <li>
+			                        <a class="page-scroll" href="#about">About</a>
+			                    </li>
+			                    <li>
+			                      <a class="page-scroll services" href="#services">Services</a>
+			                    </li>
+			                    <li>
+			                        <a class="page-scroll" href="#portfolio">Portfolio</a>
+			                    </li>
+			                    <!-- Future Implementation -->
+			                    <li class="hidden">
+			                        <a class="page-scroll" href="#contact">Contact</a>
+			                    </li>
+			                </ul>
+			            </div>
+			            <!-- /.navbar-collapse -->
+			        </div>
+			        <!-- /.container -->
+			    </nav>
 
-    <!-- Fonts -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="vendor/devicon-master/devicon.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Josefin+Slab|Rouge+Script|Amaranth|Julius+Sans+One" rel="stylesheet">
+			    <!-- Jumbotron -->
+			    <div id="page-top" class="jumbotron custom-jumbo">
+			      <!-- <img src="img/avatar.png"> -->
+			      <h1>Rogerio Ribeiro</h1>
+			      <hr class="star-light">
+			      <p>Front-End Developer - Back-End Developer - User Experience Designer</p>
+			    </div>
 
+			    <!-- About Section -->
+			    <section id="about" class="about-section">
+			        <div class="container">
+			            <div class="row">
+			                <div class="col-lg-6">
+			                     <span class="fancy-hello"> Hello, </span><br><br>
+			                     <p> As of Spring 2016, I am a graduate of Ryerson University with a Bachelors of Science in Computer Science. During my time at Ryerson, I became very interested in any web related topics either as a front-end or back-end contributor. <br><br>
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+			                        Starting out only as an assignment during my 4th year, I helped develop a scheduling application along with two other colleagues of the Computer Science program. My colleagues and I were encouraged to continue working on this application from our professor as we have currently taken time out of our schedules to do so. The tasks are distributed equally as my contribution to this project is related to the user experience and front-end development of the application. <br><br>
 
-</head>
+			                        During my participation in this project, I have been able to enhance my skills in HTML and CSS, as well as furthering my knowledge of APIs and frameworks such as Google APIs, Bootsrap, Fullcalendar and OAuth. <br><br>
 
-<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+			                        Outside of academics, my interests lie in playing video games and participating in sports such as soccer. Through these activities I have become a more team focused, result oriented and reliable person. These traits have allowed me to solve everyday problems and thrive in a team environment with an improved focus in achieving goals and going beyond expectations.
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+			                </div>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top navbar-custom" role="navigation">
-        <div class="container">
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
+			                <div class="col-lg-6 polaroid">
+			                  <p>Ribeiro, Rogerio</p>
+			                  <img src="img/MyProfilePicture.png" class="img-responsive">
+			                </div>
+			            </div>
+			        </div>
+			    </section>
+			</div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-ex1-collapse navbar-right">
-                <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden">
-                        <a class="page-scroll" href="#page-top">Home</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#about">About</a>
-                    </li>
-                    <li>
-                      <a class="page-scroll services" href="#services">Services</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#portfolio">Portfolio</a>
-                    </li>
-                    <!-- Future Implementation -->
-                    <li class="hidden">
-                        <a class="page-scroll" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
+			<!-- Services Section -->
+		    <section id="services" class="services-section">
+		      <div class="container">
 
-    <!-- Jumbotron -->
-    <div id="page-top" class="jumbotron custom-jumbo">
-      <!-- <img src="img/avatar.png"> -->
-      <h1>Rogerio Ribeiro</h1>
-      <hr class="star-light">
-      <p>Front-End Developer - Back-End Developer - User Experience Designer</p>
-    </div>
+		          <div class="skills">
+		            <div class="services-section-left">
+		               <h1 class="col-lg-4">Skills</h1>
+		               <div class="col-lg-8">
+		                 <i class="devicon-css3-plain-wordmark colored fade-in css3"></i>
+		                 <i class="devicon-bootstrap-plain-wordmark colored fade-in bootstrap"></i>
+		                 <i class="devicon-git-plain-wordmark colored fade-in git"></i>
+		                 <i class="devicon-html5-plain-wordmark colored fade-in html5"></i>
+		                 <i class="devicon-javascript-plain colored fade-in javascript"></i>
+		                 <i class="devicon-mongodb-plain-wordmark colored fade-in mongodb"></i>
+		                 <i class="devicon-nodejs-plain-wordmark colored fade-in nodejs" ></i>
+		                </div><br>
+		             </div>
+		          </div>
+		         <hr>
+		         <div class="software">
+		            <div class="services-section-right">
+		                 <h1 class="col-lg-4">Familiar Software</h1>
+		                 <div class="col-lg-8">
+		                   <i class="devicon-bitbucket-plain-wordmark colored"></i>
+		                   <i class="devicon-linux-plain colored"></i>
+		                   <i class="devicon-trello-plain colored"></i>
+		                   <i class="devicon-windows8-original colored"></i>
+		                   <i class="devicon-chrome-plain colored"></i>
+		                 </div>
+		            </div>
+		          </div>
+		      </div>
+		    </section>
+		    <!-- Portfolio Grid Section -->
+		    <section id="portfolio" class="portfolio-section">
+		        <div class="container">
+		            <div class="row">
+		                <div class="col-lg-12 text-center">
+		                    <h2>Portfolio</h2>
+		                    <hr class="star-primary">
+		                </div>
+		            </div>
+		            <div class="row">
+		                <div class="col-sm-4 portfolio-item">
+		                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+		                        <div class="caption">
+		                            <div class="caption-content">
+		                                <i class="fa fa-search-plus fa-3x"></i>
+		                            </div>
+		                        </div>
+		                        <img src="img/TodoList.png" class="img-responsive" alt="">
+		                    </a>
+		                </div>
+		                <div class="col-sm-4 portfolio-item">
+		                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+		                        <div class="caption">
+		                            <div class="caption-content">
+		                                <i class="fa fa-search-plus fa-3x"></i>
+		                            </div>
+		                        </div>
+		                        <img src="img/DragAndDrop.png" class="img-responsive" alt="">
+		                    </a>
+		                </div>
+		                <div class="col-sm-4 portfolio-item">
+		                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+		                        <div class="caption">
+		                            <div class="caption-content">
+		                                <i class="fa fa-search-plus fa-3x"></i>
+		                            </div>
+		                        </div>
+		                        <img src="img/WeatherApp.png" class="img-responsive" alt="">
+		                    </a>
+		                </div>
+		                <div class="col-sm-4 portfolio-item">
+		                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+		                        <div class="caption">
+		                            <div class="caption-content">
+		                                <i class="fa fa-search-plus fa-3x"></i>
+		                            </div>
+		                        </div>
+		                        <img src="img/TechNews.png" class="img-responsive" alt="">
+		                    </a>
+		                </div>
+		                <div class="col-sm-4 portfolio-item">
+		                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+		                        <div class="caption">
+		                            <div class="caption-content">
+		                                <i class="fa fa-search-plus fa-3x"></i>
+		                            </div>
+		                        </div>
+		                        <img src="img/AboutMe.png" class="img-responsive" alt="">
+		                    </a>
+		                </div>
+		            </div>
+		        </div>
+		    </section>
 
-    <!-- About Section -->
-    <section id="about" class="about-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                     <span class="fancy-hello"> Hello, </span><br><br>
-                     <p> As of Spring 2016, I am a graduate of Ryerson University with a Bachelors of Science in Computer Science. During my time at Ryerson, I became very interested in any web related topics either as a front-end or back-end contributor. <br><br>
+		        <!-- Contact Section -->
+		    <!-- For future implementation when I have a full running website. -->
+		<!--     <section id="contact" class="contact-section">
+		        <div class="container">
+		            <div class="row">
+		                <div class="col-lg-12">
+		                    <h1> Contact Me </h1>
 
-                        Starting out only as an assignment during my 4th year, I helped develop a scheduling application along with two other colleagues of the Computer Science program. My colleagues and I were encouraged to continue working on this application from our professor as we have currently taken time out of our schedules to do so. The tasks are distributed equally as my contribution to this project is related to the user experience and front-end development of the application. <br><br>
+		                    <form action="mail.php" method="POST">
+		                        <div class="form-group floating-label-form-group controls">
+		                          <div class="col-xs-6">
+		                              <input type="text" class="form-control" placeholder="&#xf007 Name" id="name" name="name" />
+		                          </div>
 
-                        During my participation in this project, I have been able to enhance my skills in HTML and CSS, as well as furthering my knowledge of APIs and frameworks such as Google APIs, Bootsrap, Fullcalendar and OAuth. <br><br>
-
-                        Outside of academics, my interests lie in playing video games and participating in sports such as soccer. Through these activities I have become a more team focused, result oriented and reliable person. These traits have allowed me to solve everyday problems and thrive in a team environment with an improved focus in achieving goals and going beyond expectations.
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="services-section">
-      <div class="container">
-
-          <div class="skills">
-            <div class="services-section-left">
-               <h1 class="col-lg-4">Skills</h1>
-               <div class="col-lg-8">
-                 <i class="devicon-css3-plain-wordmark colored fade-in css3"></i>
-                 <i class="devicon-bootstrap-plain-wordmark colored fade-in bootstrap"></i>
-                 <i class="devicon-git-plain-wordmark colored fade-in git"></i>
-                 <i class="devicon-html5-plain-wordmark colored fade-in html5"></i>
-                 <i class="devicon-javascript-plain colored fade-in javascript"></i>
-                 <i class="devicon-mongodb-plain-wordmark colored fade-in mongodb"></i>
-                 <i class="devicon-nodejs-plain-wordmark colored fade-in nodejs" ></i>
-                </div><br>
-             </div>
-          </div>
-         <hr>
-         <div class="software">
-            <div class="services-section-right">
-                 <h1 class="col-lg-4">Familiar Software</h1>
-                 <div class="col-lg-8">
-                   <i class="devicon-bitbucket-plain-wordmark colored"></i>
-                   <i class="devicon-linux-plain colored"></i>
-                   <i class="devicon-trello-plain colored"></i>
-                   <i class="devicon-windows8-original colored"></i>
-                   <i class="devicon-chrome-plain colored"></i>
-                 </div>
-            </div>
-          </div>
-      </div>
-    </section>
-    <!-- Portfolio Grid Section -->
-    <section id="portfolio" class="portfolio-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Portfolio</h2>
-                    <hr class="star-primary">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/TodoList.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/DragAndDrop.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/WeatherApp.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/TechNews.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/AboutMe.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-    </section>
-
-    <!-- Contact Section -->
-    <!-- For future implementation when I have a full running website. -->
-<!--     <section id="contact" class="contact-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1> Contact Me </h1>
-
-                    <form action="mail.php" method="POST">
-                        <div class="form-group floating-label-form-group controls">
-                          <div class="col-xs-6">
-                              <input type="text" class="form-control" placeholder="&#xf007 Name" id="name" name="name" />
-                          </div>
-
-                          <div class="col-xs-6">
-                              <input type="text" class="form-control" placeholder="&#xf0e0 Email" id="email" name="email"/>
-                          </div><br><br><br><br>
-                        </div>
-                        <div class="form-group floating-label-form-group controls">
-                            <div class="col-xs-12">
-                              <input type="text" class="form-control" placeholder="Subject" id="subject" name="subject"/>
-                            </div>
-                        </div>
-                        <div class="form-group floating-label-form-group controls">
-                            <div class="col-xs-12">
-                              <textarea rows="5" cols="50" name="comment" placeholder="Leave me a message ..." class="form-control" id="message" name="message"></textarea>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="row">
-                            <div class="form-group col-xs-12">
-                                <button type="submit" class="btn btn-success btn-lg" id="send" value="send">Send</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section> -->
+		                          <div class="col-xs-6">
+		                              <input type="text" class="form-control" placeholder="&#xf0e0 Email" id="email" name="email"/>
+		                          </div><br><br><br><br>
+		                        </div>
+		                        <div class="form-group floating-label-form-group controls">
+		                            <div class="col-xs-12">
+		                              <input type="text" class="form-control" placeholder="Subject" id="subject" name="subject"/>
+		                            </div>
+		                        </div>
+		                        <div class="form-group floating-label-form-group controls">
+		                            <div class="col-xs-12">
+		                              <textarea rows="5" cols="50" name="comment" placeholder="Leave me a message ..." class="form-control" id="message" name="message"></textarea>
+		                            </div>
+		                        </div>
+		                        <br>
+		                        <div class="row">
+		                            <div class="form-group col-xs-12">
+		                                <button type="submit" class="btn btn-success btn-lg" id="send" value="send">Send</button>
+		                            </div>
+		                        </div>
+		                    </form>
+		                </div>
+		            </div>
+		        </div>
+		    </section> -->
 
 
-    <!-- Footer -->
-    <footer class="footer-distributed">
+		    <!-- Footer -->
+		    <footer class="footer-distributed">
 
-      <div class="footer-right">
+		      <div class="footer-right">
 
-        <a href="https://www.facebook.com/rogerio.ribeiro.180"><i class="fa fa-facebook"></i></a>
-        <a href="https://www.instagram.com/r_squared94/"><i class="fa fa-instagram"></i></a>
-        <a href="https://ca.linkedin.com/in/rogerio-ribeiro-b3091410a"><i class="fa fa-linkedin"></i></a>
-        <a href="https://github.com/r-ribeiro94"><i class="fa fa-github"></i></a>
+		        <a href="https://www.facebook.com/rogerio.ribeiro.180"><i class="fa fa-facebook"></i></a>
+		        <a href="https://www.instagram.com/r_squared94/"><i class="fa fa-instagram"></i></a>
+		        <a href="https://ca.linkedin.com/in/rogerio-ribeiro-b3091410a"><i class="fa fa-linkedin"></i></a>
+		        <a href="https://github.com/r-ribeiro94"><i class="fa fa-github"></i></a>
 
-      </div>
+		      </div>
 
-      <div class="footer-left">
-        <p class="smaller-text">Rogerio Ribeiro &copy; 2016</p>
-      </div>
+		      <div class="footer-left">
+		        <p class="smaller-text">Rogerio Ribeiro &copy; 2016</p>
+		      </div>
 
-    </footer>
+		    </footer>
+		</div><!-- /container -->
 
-    <!-- modal -->
-    <div id="portfolioModal1"
-         class="modal animated bounceIn"
-         tabindex="-1"
-         role="dialog"
-         aria-labelledby="myModalLabel"
-         aria-hidden="true">
+		<!-- modal -->
+	    <div id="portfolioModal1"
+	         class="modal animated bounceIn"
+	         tabindex="-1"
+	         role="dialog"
+	         aria-labelledby="myModalLabel"
+	         aria-hidden="true">
 
-      <!-- dialog -->
-      <div class="modal-dialog">
+	      <!-- dialog -->
+	      <div class="modal-dialog">
 
-        <!-- content -->
-        <div class="modal-content">
-          <!-- body -->
-          <div class="modal-body">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                        <h2>Todo List Application</h2>
-                        <hr class="star-primary">
-                        <a href="https://r-ribeiro94.github.io/Lab04"><img src="img/TodoList.png" class="img-responsive img-centered" alt=""></a>
-                        <p>This a simple todo list application that uses AngularJs. It reads a JSON file with pre-loaded tasks and once the user adds another task it gets appened to the list but not to the JSON file. The user must input a title for the task and a description if neither is inputed they will be prompted to input both fields. <br><br>
-                        
-                          The remove checked button will remove all the checked tasks and stored it in a list of completed tasks. The completed tasks button will show/hide the completed tasks. 
-                        </p>
-                        <ul class="list-inline item-details">
-                            <li>Client:
-                                <strong><a href="https://github.com/r-ribeiro94/CPS630/tree/master/Lab04">Github</a>
-                                </strong>
-                            </li>
-                            <li>
-                                <p>Date: <strong>March 2016</strong></p>
-                                
-                            </li>
-                            <li>
-                                <p>Service: <strong>Web Applications (CPS 630)</strong></p>
-                            </li>
-                        </ul>
-                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                </div>
-            </div>
-          </div>
-          <!-- body -->
-        </div>
-        <!-- content -->
+	        <!-- content -->
+	        <div class="modal-content">
+	          <!-- body -->
+	          <div class="modal-body">
+	            <div class="row">
+	                <div class="col-lg-8 col-lg-offset-2">
+	                        <h2>Todo List Application</h2>
+	                        <hr class="star-primary">
+	                        <a href="https://r-ribeiro94.github.io/Lab04"><img src="img/TodoList.png" class="img-responsive img-centered" alt=""></a>
+	                        <p>This a simple todo list application that uses AngularJs. It reads a JSON file with pre-loaded tasks and once the user adds another task it gets appened to the list but not to the JSON file. The user must input a title for the task and a description if neither is inputed they will be prompted to input both fields. <br><br>
+	                        
+	                          The remove checked button will remove all the checked tasks and stored it in a list of completed tasks. The completed tasks button will show/hide the completed tasks. 
+	                        </p>
+	                        <ul class="list-inline item-details">
+	                            <li>Client:
+	                                <strong><a href="https://github.com/r-ribeiro94/CPS630/tree/master/Lab04">Github</a>
+	                                </strong>
+	                            </li>
+	                            <li>
+	                                <p>Date: <strong>March 2016</strong></p>
+	                                
+	                            </li>
+	                            <li>
+	                                <p>Service: <strong>Web Applications (CPS 630)</strong></p>
+	                            </li>
+	                        </ul>
+	                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+	                </div>
+	            </div>
+	          </div>
+	          <!-- body -->
+	        </div>
+	        <!-- content -->
 
-      </div>
-      <!-- dialog -->
+	      </div>
+	      <!-- dialog -->
 
-    </div>
-    <!-- modal -->
+	    </div>
+	    <!-- modal -->
 
-    <!-- modal -->
-    <div id="portfolioModal2"
-         class="modal animated bounceIn"
-         tabindex="-1"
-         role="dialog"
-         aria-labelledby="myModalLabel"
-         aria-hidden="true">
+	    <!-- modal -->
+	    <div id="portfolioModal2"
+	         class="modal animated bounceIn"
+	         tabindex="-1"
+	         role="dialog"
+	         aria-labelledby="myModalLabel"
+	         aria-hidden="true">
 
-      <!-- dialog -->
-      <div class="modal-dialog">
+	      <!-- dialog -->
+	      <div class="modal-dialog">
 
-        <!-- content -->
-        <div class="modal-content">
-          <!-- body -->
-          <div class="modal-body">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                        <h2>Drag and Drop Location Application</h2>
-                        <hr class="star-primary">
-                        <a href="https://r-ribeiro94.github.io/Lab03"><img src="img/DragAndDrop.png" class="img-responsive img-centered" alt=""></a>
-                        <p>This application takes advantage of the HTML5 geolocation and drag and drop feature. It reads a text file that has one coordinate in longitude and latitude format (ex: 47.000,-74.000). Once the text file has been dropped into the box, it will show both the location of the user and that of the text file. <br><br>
-                        
-                          The 'Get Harvestine' button uses Web Worker to calculate the distance between the user's location and that of the text file, and the 'Stop Worker' button stops the Web Worker which doesn't allow the user to use the 'Get Harvestine' button, because the Web Worker has been dismissed. 
-                        </p>
-                        <ul class="list-inline item-details">
-                            <li>Client:
-                                <strong><a href="https://github.com/r-ribeiro94/CPS630/tree/master/Lab3(V2)">Github</a>
-                                </strong>
-                            </li>
-                            <li>
-                                <p>Date: <strong>February 2016</strong></p>
-                                
-                            </li>
-                            <li>
-                                <p>Service: <strong>Web Applications (CPS 630)</strong></p>
-                            </li>
-                        </ul>
-                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                </div>
-            </div>
-          </div>
-          <!-- body -->
-        </div>
-        <!-- content -->
+	        <!-- content -->
+	        <div class="modal-content">
+	          <!-- body -->
+	          <div class="modal-body">
+	            <div class="row">
+	                <div class="col-lg-8 col-lg-offset-2">
+	                        <h2>Drag and Drop Location Application</h2>
+	                        <hr class="star-primary">
+	                        <a href="https://r-ribeiro94.github.io/Lab03"><img src="img/DragAndDrop.png" class="img-responsive img-centered" alt=""></a>
+	                        <p>This application takes advantage of the HTML5 geolocation and drag and drop feature. It reads a text file that has one coordinate in longitude and latitude format (ex: 47.000,-74.000). Once the text file has been dropped into the box, it will show both the location of the user and that of the text file. <br><br>
+	                        
+	                          The 'Get Harvestine' button uses Web Worker to calculate the distance between the user's location and that of the text file, and the 'Stop Worker' button stops the Web Worker which doesn't allow the user to use the 'Get Harvestine' button, because the Web Worker has been dismissed. 
+	                        </p>
+	                        <ul class="list-inline item-details">
+	                            <li>Client:
+	                                <strong><a href="https://github.com/r-ribeiro94/CPS630/tree/master/Lab3(V2)">Github</a>
+	                                </strong>
+	                            </li>
+	                            <li>
+	                                <p>Date: <strong>February 2016</strong></p>
+	                                
+	                            </li>
+	                            <li>
+	                                <p>Service: <strong>Web Applications (CPS 630)</strong></p>
+	                            </li>
+	                        </ul>
+	                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+	                </div>
+	            </div>
+	          </div>
+	          <!-- body -->
+	        </div>
+	        <!-- content -->
 
-      </div>
-      <!-- dialog -->
+	      </div>
+	      <!-- dialog -->
 
-    </div>
-    <!-- modal -->
+	    </div>
+	    <!-- modal -->
 
-    <!-- modal -->
-    <div id="portfolioModal3"
-      class="modal animated bounceIn"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="myModalLabel"
-      aria-hidden="true">
+	    <!-- modal -->
+	    <div id="portfolioModal3"
+	      class="modal animated bounceIn"
+	      tabindex="-1"
+	      role="dialog"
+	      aria-labelledby="myModalLabel"
+	      aria-hidden="true">
 
-      <!-- dialog -->
-      <div class="modal-dialog">
+	      <!-- dialog -->
+	      <div class="modal-dialog">
 
-        <!-- content -->
-        <div class="modal-content">
-          <!-- body -->
-          <div class="modal-body">
-            <div class="row">
-              <div class="col-lg-8 col-lg-offset-2">
-                <h2>Weather Application</h2>
-                <hr class="star-primary">
-                <a href="https://r-ribeiro94.github.io/Lab02"><img src="img/WeatherApp.png" class="img-responsive img-centered" alt=""></a><br><br>
-                <p>This application uses the OpenWeatherApp API to return the current temperature, as well as hourly forecast and five day forecast. It also uses the Google API by returning an auto search of the city or address the user is looking for.
-                </p>
-                
-                <ul class="list-inline item-details">
-                  <li>Client:
-                    <strong><a href="https://github.com/r-ribeiro94/CPS630/tree/master/Lab02">Github</a>
-                    </strong>
-                  </li>
-                  
-                  <li>
-                    <p>Date: <strong>February 2016</strong></p>
+	        <!-- content -->
+	        <div class="modal-content">
+	          <!-- body -->
+	          <div class="modal-body">
+	            <div class="row">
+	              <div class="col-lg-8 col-lg-offset-2">
+	                <h2>Weather Application</h2>
+	                <hr class="star-primary">
+	                <a href="https://r-ribeiro94.github.io/Lab02"><img src="img/WeatherApp.png" class="img-responsive img-centered" alt=""></a><br><br>
+	                <p>This application uses the OpenWeatherApp API to return the current temperature, as well as hourly forecast and five day forecast. It also uses the Google API by returning an auto search of the city or address the user is looking for.
+	                </p>
+	                
+	                <ul class="list-inline item-details">
+	                  <li>Client:
+	                    <strong><a href="https://github.com/r-ribeiro94/CPS630/tree/master/Lab02">Github</a>
+	                    </strong>
+	                  </li>
+	                  
+	                  <li>
+	                    <p>Date: <strong>February 2016</strong></p>
 
-                  </li>
-                
-                  <li>
-                    <p>Service: <strong>Web Applications (CPS 630)</strong></p>
-                  </li>
-                </ul>
+	                  </li>
+	                
+	                  <li>
+	                    <p>Service: <strong>Web Applications (CPS 630)</strong></p>
+	                  </li>
+	                </ul>
 
-                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-              </div>
-            </div>
-          </div>
-          <!-- body -->
-        </div>
-        <!-- content -->
+	                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+	              </div>
+	            </div>
+	          </div>
+	          <!-- body -->
+	        </div>
+	        <!-- content -->
 
-      </div>
-      <!-- dialog -->
+	      </div>
+	      <!-- dialog -->
 
-    </div>
-    <!-- modal -->
+	    </div>
+	    <!-- modal -->
 
-      <!-- modal -->
-    <div id="portfolioModal4"
-      class="modal animated bounceIn"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="myModalLabel"
-      aria-hidden="true">
+	      <!-- modal -->
+	    <div id="portfolioModal4"
+	      class="modal animated bounceIn"
+	      tabindex="-1"
+	      role="dialog"
+	      aria-labelledby="myModalLabel"
+	      aria-hidden="true">
 
-      <!-- dialog -->
-      <div class="modal-dialog">
+	      <!-- dialog -->
+	      <div class="modal-dialog">
 
-        <!-- content -->
-        <div class="modal-content">
-          <!-- body -->
-          <div class="modal-body">
-            <div class="row">
-              <div class="col-lg-8 col-lg-offset-2">
-                <h2>TechNews</h2>
-                <hr class="star-primary">
-                <a href="https://r-ribeiro94.github.io/Lab01"><img src="img/TechNews.png" class="img-responsive img-centered" alt=""></a><br><br>
-                <p>A regular website that has five tech related article and an about me section. It uses HTML5 and CSS3 functionalities, most importantly the media queries that are used in CSS for a responsive design. 
-                </p>
-                
-                <ul class="list-inline item-details">
-                  <li>Client:
-                    <strong><a href="https://github.com/r-ribeiro94/CPS630/tree/master/Lab01">Github</a>
-                    </strong>
-                  </li>
-                  
-                  <li>
-                    <p>Date: <strong>January 2016</strong></p>
+	        <!-- content -->
+	        <div class="modal-content">
+	          <!-- body -->
+	          <div class="modal-body">
+	            <div class="row">
+	              <div class="col-lg-8 col-lg-offset-2">
+	                <h2>TechNews</h2>
+	                <hr class="star-primary">
+	                <a href="https://r-ribeiro94.github.io/Lab01"><img src="img/TechNews.png" class="img-responsive img-centered" alt=""></a><br><br>
+	                <p>A regular website that has five tech related article and an about me section. It uses HTML5 and CSS3 functionalities, most importantly the media queries that are used in CSS for a responsive design. 
+	                </p>
+	                
+	                <ul class="list-inline item-details">
+	                  <li>Client:
+	                    <strong><a href="https://github.com/r-ribeiro94/CPS630/tree/master/Lab01">Github</a>
+	                    </strong>
+	                  </li>
+	                  
+	                  <li>
+	                    <p>Date: <strong>January 2016</strong></p>
 
-                  </li>
-                
-                  <li>
-                    <p>Service: <strong>Web Applications (CPS 630)</strong></p>
-                  </li>
-                </ul>
+	                  </li>
+	                
+	                  <li>
+	                    <p>Service: <strong>Web Applications (CPS 630)</strong></p>
+	                  </li>
+	                </ul>
 
-                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-              </div>
-            </div>
-          </div>
-          <!-- body -->
-        </div>
-        <!-- content -->
+	                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+	              </div>
+	            </div>
+	          </div>
+	          <!-- body -->
+	        </div>
+	        <!-- content -->
 
-      </div>
-      <!-- dialog -->
+	      </div>
+	      <!-- dialog -->
 
-    </div>
-    <!-- modal -->
+	    </div>
+	    <!-- modal -->
 
-    <!-- modal -->
-    <div id="portfolioModal5"
-      class="modal animated bounceIn"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="myModalLabel"
-      aria-hidden="true">
+	    <!-- modal -->
+	    <div id="portfolioModal5"
+	      class="modal animated bounceIn"
+	      tabindex="-1"
+	      role="dialog"
+	      aria-labelledby="myModalLabel"
+	      aria-hidden="true">
 
-      <!-- dialog -->
-      <div class="modal-dialog">
+	      <!-- dialog -->
+	      <div class="modal-dialog">
 
-        <!-- content -->
-        <div class="modal-content">
-          <!-- body -->
-          <div class="modal-body">
-            <div class="row">
-              <div class="col-lg-8 col-lg-offset-2">
-                <h2>About Me</h2>
-                <hr class="star-primary">
-                <img src="img/AboutMe.png" class="img-responsive img-centered" alt=""><br><br><br><br>
-                <p>A website that utilizes the NodeJS and Jade templating. It's just a basic website, with 3 descriptions of web programming/frameworks/operatin systems that interest me. There is also an about section that tells the reader what I like to do on my free time.   
-                </p>
-                
-                <ul class="list-inline item-details">
-                  <li>Client:
-                    <strong><a href="https://github.com/r-ribeiro94/CPS630/tree/master/Lab05">Github</a>
-                    </strong>
-                  </li>
-                  
-                  <li>
-                    <p>Date: <strong>April 2016</strong></p>
+	        <!-- content -->
+	        <div class="modal-content">
+	          <!-- body -->
+	          <div class="modal-body">
+	            <div class="row">
+	              <div class="col-lg-8 col-lg-offset-2">
+	                <h2>About Me</h2>
+	                <hr class="star-primary">
+	                <img src="img/AboutMe.png" class="img-responsive img-centered" alt=""><br><br><br><br>
+	                <p>A website that utilizes the NodeJS and Jade templating. It's just a basic website, with 3 descriptions of web programming/frameworks/operatin systems that interest me. There is also an about section that tells the reader what I like to do on my free time.   
+	                </p>
+	                
+	                <ul class="list-inline item-details">
+	                  <li>Client:
+	                    <strong><a href="https://github.com/r-ribeiro94/CPS630/tree/master/Lab05">Github</a>
+	                    </strong>
+	                  </li>
+	                  
+	                  <li>
+	                    <p>Date: <strong>April 2016</strong></p>
 
-                  </li>
-                
-                  <li>
-                    <p>Service: <strong>Web Applications (CPS 630)</strong></p>
-                  </li>
-                </ul>
+	                  </li>
+	                
+	                  <li>
+	                    <p>Service: <strong>Web Applications (CPS 630)</strong></p>
+	                  </li>
+	                </ul>
 
-                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-              </div>
-            </div>
-          </div>
-          <!-- body -->
-        </div>
-        <!-- content -->
+	                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+	              </div>
+	            </div>
+	          </div>
+	          <!-- body -->
+	        </div>
+	        <!-- content -->
 
-      </div>
-      <!-- dialog -->
+	      </div>
+	      <!-- dialog -->
 
-    </div>
-    <!-- modal -->
+	    </div>
+	    <!-- modal -->
 
-    <!-- jQuery -->
+		<!-- jQuery -->
     <script src="vendor/jquery/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
@@ -530,14 +539,8 @@
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/portfolio.js"></script>
 
-    <!-- Othe Scripts -->
-    <script type="text/javascript">
-      if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-        $('services-section-left i').css({'opacity' : 0.7});
-        $('services-section-right i').css({'opacity' : 0.7});
-      }
-    </script>
-
-</body>
-
+		<script src="vendor/PagePreloadingEffect/js/classie.js"></script>
+		<script src="vendor/PagePreloadingEffect/js/pathLoader.js"></script>
+		<script src="vendor/PagePreloadingEffect/js/main.js"></script>
+	</body>
 </html>
