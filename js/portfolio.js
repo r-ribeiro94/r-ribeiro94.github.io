@@ -5,6 +5,16 @@ $(window).scroll(function() {
     } else {
         $(".navbar-fixed-top").removeClass("top-nav-collapse");
     }
+
+    var ht = $('.services-section').offset().top,
+        hH = $('.services-section').outerHeight(),
+        wH = $(window).height(),
+        wS = $(this).scrollTop();
+
+    if(wS > (ht + hH - wH)) {
+        $('.services-section-left i').animate({'opacity':'1'}, {duration: 2000, easing: 'easeInBounce'});
+        $('.services-section-right i').animate({'opacity':'1'}, {duration: 2000, easing: 'easeInBounce'});
+    }
 });
 
 //jQuery for page scrolling feature - requires jQuery Easing plugin
@@ -18,3 +28,10 @@ $(function() {
     });
 });
 
+
+$(window).load(function() {
+        
+        // Animate loader off screen
+        $(".se-pre-con").fadeOut("slow");
+    
+});
