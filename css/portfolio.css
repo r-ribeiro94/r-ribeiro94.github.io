@@ -136,23 +136,18 @@ span {
     background: #eee;
 }
 
-@media screen and (min-width: 0px) and (max-width: 399px) {
+@media screen and (min-width: 0px) and (max-width: 450px) {
     .about-section {
-      height: 315%;
-    }
-}
-
-@media screen and (min-width: 400px) and (max-width: 450px) {
-    .about-section {
-      height: 285%;
+      height: 300%;
     }
 }
 
 @media screen and (min-width: 451px) and (max-width: 1200px) {
   .about-section {
-    height: 175%;
+    height: 265%;
   }
 }
+
 .about-section h3 { 
   color: #383636; 
   font-family: 'Julius Sans One', sans-serif; 
@@ -211,8 +206,8 @@ span.fancy-hello{
 @media screen and (min-width: 0px) and (max-width: 450px) {
   .polaroid{
     position: relative;
-    width: 100%;
-    margin-left: 2.5%;
+    width: 85%;
+    margin-left: 7.5%;
     margin-top: 0;
   }
 }
@@ -318,7 +313,7 @@ span.fancy-hello{
 
 @media screen and (min-width: 466px) and (max-width: 574px) {
   .services-section {
-    height: 115%;
+    height: 150%;
   }
 
   .services-section .container hr {
@@ -331,7 +326,7 @@ span.fancy-hello{
 }
 @media screen and (min-width: 575px) and (max-width: 765px){
   .services-section {
-    height: 100%;
+    height: 125%;
   }
 
   .services-section .container hr {
@@ -345,7 +340,7 @@ span.fancy-hello{
 
 @media screen and (min-width: 766px) and (max-width: 1200px){
   .services-section {
-    height: 85%;
+    height: 125%;
   }
 
   .services-section .container hr {
