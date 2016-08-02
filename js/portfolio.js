@@ -30,6 +30,6 @@ $(function() {
 
 
 $(window).load(function() {
-    setTimeout(function(){ $(".navbar").addClass("navbar-default navbar-fixed-top navbar-custom"); }, 3500);
+    setTimeout(function(){ $(".navbar").addClass("navbar-default navbar-fixed-top navbar-custom"); }, 3000);
     
 });
