@@ -40,6 +40,12 @@ span {
   background: url(../img/Preloader.gif) center no-repeat #fff;
 }
 
+@media screen and (min-width: 1024px) and (max-width: 1440px){
+  .se-pre-con{
+     background-position: center 65%;
+  }
+}
+
 /*Navbar Content*/
 
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
@@ -138,16 +144,27 @@ span {
 
 @media screen and (min-width: 0px) and (max-width: 450px) {
     .about-section {
-      height: 300%;
+      height: 285%;
     }
 }
 
-@media screen and (min-width: 451px) and (max-width: 1200px) {
+@media screen and (min-width: 451px) and (max-width: 1023px) {
   .about-section {
     height: 265%;
   }
 }
 
+@media screen and (min-width: 1024px) and (max-width: 1199px){
+  .about-section {
+    height: 200%;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1440px){
+  .about-section {
+    height: 125%;
+  }
+}
 .about-section h3 { 
   color: #383636; 
   font-family: 'Julius Sans One', sans-serif; 
@@ -347,6 +364,7 @@ span.fancy-hello{
     margin-top: -12.5%;
   }
 }
+
 /* Portfolio Section - All clases below correspond to the portfolio section. */
 .portfolio-section {
     height: 115%;
