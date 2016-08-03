@@ -30,6 +30,8 @@ $(function() {
 
 
 $(window).load(function() {
-    setTimeout(function(){ $(".navbar").addClass("navbar-default navbar-fixed-top navbar-custom"); }, 3000);
+        
+        // Animate loader off screen
+        $(".se-pre-con").fadeOut("slow");
     
 });
