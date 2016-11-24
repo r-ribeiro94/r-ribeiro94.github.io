@@ -1,0 +1,90 @@
+/* Footer CSS */
+#footer {
+  width: 100%;
+  height: 250px;
+  background-color: black;
+  position: relative;
+  margin-top: 10%;
+}
+
+@media only screen and (max-width: 990px) {
+  #footer {
+    height: 300px;
+    text-align: center;
+  }
+
+  .footer-right {
+    margin-left: -7.5%;
+  }
+
+}
+
+.footer-left {
+  margin-top: 2.5%;
+}
+
+.footer-left h3{
+  color: #fff;
+  font-family: 'Oxygen', sans-serif;
+}
+
+.footer-left a{
+  color: #fff;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.footer-left li{
+  list-style-type: none;
+}
+
+.footer-right {
+  margin-top: 2.5%;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.footer-right i{
+  background-color:  #33383b;
+  color: #ffffff;
+  font-size: 18px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer-right i.fa-envelope{
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer-right p{
+  display: inline-block;
+  color: #ffffff;
+  vertical-align: middle;
+  margin:0;
+}
+
+.footer-right p span{
+  display:block;
+  font-weight: normal;
+  font-size:14px;
+  line-height:2;
+}
+
+.footer-right p a{
+  color:  #5383d3;
+  text-decoration: none;;
+}
+
+#copyright {
+  position: absolute;
+  width: 100%;
+  line-height: 40px;
+  text-align: center;
+  bottom:0;
+  color: #fff;
+  font-family: 'Source Sans Pro', sans-serif;
+}

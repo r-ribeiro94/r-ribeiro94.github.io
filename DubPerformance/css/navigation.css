@@ -1,0 +1,64 @@
+/* Navigation CSS */
+
+@media only screen and (min-width: 620px) and (max-width: 767px) {
+  .brand {
+    margin-top: -2.5%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 900px) {
+
+  #topnavbar {
+    height: 100px;
+  }
+
+  .brand {
+    transform: translateX(-50%);
+    left: 50%;
+    top: 20%;
+    position: absolute;
+  }
+}
+
+@media only screen and (min-width: 901px) and (max-width: 1800px) {
+
+  #topnavbar {
+    height: 100px;
+  }
+
+  .brand {
+    transform: translateX(-50%);
+    left: 50%;
+    position: absolute;
+  }
+}
+
+@media only screen and (min-width: 1250px) {
+
+  #topnavbar {
+    height: 100px;
+  }
+
+  .brand {
+    transform: translateX(-50%);
+    left: 50%;
+    bottom: -10%;
+    position: absolute;
+  }
+}
+
+#topnavbar {
+  margin: 0;
+  background-color: white;
+  border: none;
+  border-radius: 0;
+}
+
+#topnavbar img {
+  width: 50%;
+}
+
+#myNavBar ul > li > a{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+}
