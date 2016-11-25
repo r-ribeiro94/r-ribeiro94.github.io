@@ -7,7 +7,14 @@
   margin-top: 10%;
 }
 
-@media only screen and (max-width: 990px) {
+@media only screen and (max-width: 420px) {
+  #footer {
+    height: 350px;
+    text-align: center;
+  }
+
+}
+@media only screen and (min-width: 421px) and (max-width: 990px) {
   #footer {
     height: 300px;
     text-align: center;
