@@ -48,6 +48,12 @@
       }
 
       @media only screen and (min-width: 320px) and (max-width: 399px) {
+        
+        #oil-change h3, #hoist h3, #brakes h3, #turbo h3, #suspension h3 {
+          margin-left: 0 !important;
+          text-align: center;
+        }
+
         #oil-change p, #hoist p, #brakes p, #turbo p, #suspension p {
           font-size: 14px;
           margin-left: 0 !important;
@@ -64,6 +70,11 @@
 
 
       @media only screen and (min-width: 400px) and (max-width: 999px) {
+        #oil-change h3, #hoist h3, #brakes h3, #turbo h3, #suspension h3 {
+          margin-left: 0 !important;
+          text-align: center;
+        }
+
         #oil-change p, #hoist p, #brakes p, #turbo p, #suspension p {
           font-size: 16px;
           margin-left: 0 !important;
@@ -76,6 +87,19 @@
           margin-right: auto;
           float: none !important ;
         }
+      }
+
+      .products{
+          width: 50%;
+          margin-right: auto;
+          margin-left: auto;
+          text-align: center;
+      }
+
+      .image{
+          display: inline-block;
+          width: 150px;
+          margin: 5px;
       }
 
     </style>
@@ -109,7 +133,10 @@
         <div class="row">
           <div id="oil-change">
               <img class="col-md-4" style="width: 200px; height: 200px;" src="images/oil.png" />
-              <p class="col-md-8" style="margin-top: 5%; margin-left: 10%;">We service oil changes on all makes and models. Also varying in a wide variety of types of oil changes, ex: synthetic. </p>
+              <div class="col-md-8">
+                <h3 style="font-style: italic; text-decoration: underline; margin-left: 10%;">Oil Change</h3>
+                <p style="margin-top: 5%; margin-left: 10%;">We service oil changes on all makes and models. Also varying in a wide variety of types of oil changes, ex: synthetic. </p>
+              </div>
           </div>
         </div>
       </div>
@@ -119,7 +146,10 @@
       <div class="container">
         <div class="row">
           <div id="hoist">
-              <p class="col-md-8" style="margin-top: 5%;">We do all kind of regular maintenance work on your car and as well as some custom work which we can talk about in further detail. </p>
+              <div class="col-md-8">
+                <h3 style="font-style: italic; text-decoration: underline;">Custom Work and Maintenance</h3>
+                <p style="margin-top: 5%;">We do all kind of regular maintenance work on your car and as well as some custom work which we can talk about in further detail. </p>
+              </div>
               <img class="col-md-4" style="width: 200px; height: 200px; float: right;" src="images/autolift.png" />
           </div>
         </div>
@@ -131,7 +161,10 @@
         <div class="row">
           <div id="brakes">
               <img class="col-md-4" style='width:200px;height:200px;' src="images/brake-disk.png" />
-              <p class="col-md-8" style="margin-top: 5%; margin-left: 10%;">We can service brake changes as well.</p>
+              <div class="col-md-8">
+                <h3 style="font-style: italic; text-decoration: underline; margin-left: 10%;">Brakes</h3>
+                <p style="margin-top: 5%; margin-left: 10%;">We can service brake changes as well.</p>
+              </div>
           </div>
         </div>
       </div>
@@ -141,7 +174,10 @@
       <div class="container">
         <div class="row">
           <div id="turbo">
-              <p class="col-md-8" style="margin-top: 5%;">We can also work on turbo/charger fixes and upgrades.</p>
+              <div class="col-md-8">
+                <h3 style="font-style: italic; text-decoration: underline;">Turbo/Supercharger</h3>
+                <p style="margin-top: 5%;">We can also work on turbo/charger fixes and upgrades.</p>
+              </div>
               <img class="col-md-4" style='width:200px;height:200px; float: right;' src="images/air-filter.png" />
           </div>
         </div>
@@ -153,9 +189,19 @@
         <div class="row">
           <div id="suspension">
               <img class="col-md-4" style='width:200px;height:200px;' src="images/shock-absorber.png" />
-              <p class="col-md-8" style="margin-top: 5%; margin-left: 10%;">Lastly, we are able to do upgrades and maintenance work on your suspension. </p>
+              <div class="col-md-8">
+                <h3 style="font-style: italic; text-decoration: underline; margin-left: 10%;">Suspension</h3>
+                <p style="margin-top: 5%; margin-left: 10%;">Lastly, we are able to do upgrades and maintenance work on your suspension. </p>
+              </div>
           </div>
         </div>
+      </div>
+
+      <div class="products" style="margin-top: 15%; margin-bottom: -10%;">
+          <img class="image" src="https://catalog.mann-filter.com/files/imagesVariablePath/mann-filter-logo.jpg">
+          <img class="image" src="http://logok.org/wp-content/uploads/2014/05/Total-logo-1024x768.png">
+          <img class="image" src="http://logodatabases.com/wp-content/uploads/2012/05/motul.jpg">
+          <img class="image" src="http://gcg.com.au/images/stories/virtuemart/manufacturer/resized/revive-manu_220x165.gif">
       </div>
 
     </section> <!--/.wrapper -->
