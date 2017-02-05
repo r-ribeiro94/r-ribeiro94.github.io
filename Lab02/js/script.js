@@ -121,7 +121,7 @@ function getLocationAndWeather(){
       alert("Could not complete the request");
     }, false);
 
-    xhr.open("GET", "http://api.openweathermap.org/data/2.5/forecast/weather?q=" + c + "&APPID=98164dba4d0275cee356499f521ea54c&units=metric", true);
+    xhr.open("GET", "https://api.openweathermap.org/data/2.5/forecast/weather?q=" + c + "&APPID=98164dba4d0275cee356499f521ea54c&units=metric", true);
     xhr.send();
   }
   else{
