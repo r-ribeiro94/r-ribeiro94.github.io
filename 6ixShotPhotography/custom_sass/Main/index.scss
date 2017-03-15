@@ -1,0 +1,57 @@
+@import '../Mixins/icon';
+
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+main {
+	flex: 1 0 auto;
+}
+
+.logo {
+	text-align: center;
+}
+
+.side-nav {
+	background: black !important;
+	
+	// .side-nav > li > a
+	li {
+		a {
+			color: white !important;
+		}
+	}
+	
+}
+
+// Tour Section
+.tourBtn {
+	margin-top: 5%;
+}
+
+// Footer Content
+.facebook {
+	i {
+		@include fontawesomestyle("facebook");
+	}
+}
+
+.instagram {
+	i {
+		@include fontawesomestyle("instagram");
+	}
+}
+
+.twitter {
+	i {
+		@include fontawesomestyle("twitter");
+	}
+}
+
+.youtube {
+	i {
+		@include fontawesomestyle("youtube");
+	}
+}

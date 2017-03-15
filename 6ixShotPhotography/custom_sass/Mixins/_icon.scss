@@ -1,0 +1,21 @@
+@mixin fontawesomestyle($color) {
+	$facebook: #3b5998;
+	$instagram: #4c68d7;
+	$twitter: #00aced;
+	$youtube: #bb0000;
+	$font-size: 36px;
+
+	@if $color == 'facebook' {
+		font-size: $font-size;
+		color: $facebook;
+	}@else if $color == 'instagram' {
+		font-size: $font-size;
+		color: $instagram;
+	}@else if $color == 'twitter' {
+		font-size: $font-size;
+		color: $twitter;
+	}@else if $color == 'youtube' {
+		font-size: $font-size;
+		color: $youtube;
+	} 
+}
