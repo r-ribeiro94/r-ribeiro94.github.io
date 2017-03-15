@@ -1,5 +1,4 @@
 Created by: Rogerio Ribeiro
-Student Number: 500527368
 Created for CPS630 Lab04
 
 The app works pretty straightforward, user must input a title to the task and a description if neither is inputed it will prompt user to fill the field.

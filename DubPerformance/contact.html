@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Dub Performance - Contact</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="stylesheet" type="text/css" href="css/navigation.css">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+
+    <style>
+
+      /* Important for map to show on page. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+      /* Main Section */
+      #about h1, #info h3, #directions h3{
+        font-family: 'Playfair Display', sans-serif;
+      }
+
+      #about p, #info p, #directions p{
+        font-size: 18px;
+        font-family: 'Raleway', sans-serif;
+      }
+
+      #map {
+        height: 75%;
+        width: 100%;
+        margin-top: 5%;
+      }
+
+      @media only screen and (min-width: 320px) and (max-width: 991px) {
+        #about h1, #info h3, #directions h3{
+          text-align: center;
+        }
+
+        #about p, #info p, #directions p{
+          text-align: center;
+        }
+
+        #info hr {
+          width: 65% !important;
+        }
+      }
+
+      @media only screen and (min-width: 320px) and (max-width: 767px) {
+        #map {
+          width: 75%;
+          height: 75%;
+          display: block;
+          margin-right: auto;
+          margin-left: auto;
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+
+
+    <nav class="navbar navbar-default" id="topnavbar">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <img class="brand" src="images/transparent_dub.gif" alt=" "/>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="services.html">SERVICES</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <div id="map"></div>
+
+    <div class="container" id="info">
+      <div class="row">
+
+      <div class="col-md-6">
+        <h3>ADDRESS</h3>
+        <hr style="border-color: black;">
+        <p><b>Dub Performance</b></p>
+        <p><i class="fa fa-map-marker"></i><span> 3 Six Point Rd #4</span><br>&nbsp;&nbsp;&nbsp;Etobicoke, Ontario M8Z 2W7</p>
+        <p><i class="fa fa-phone"></i> 416-836-3320</p>
+      </div>
+
+      <div class="col-md-6">
+        <h3>HOURS</h3>
+        <hr style="border-color: black;">
+        <p>MON - FRI 4PM - 11PM</p>
+        <p>SAT 10AM - 11PM</p>
+      </div>
+
+      </div>
+    </div>
+    
+    <div style="text-align: center;" id="directions">
+      <h3>DIRECTIONS</h3>
+      <hr style="border-color: black; width: 50%;">
+      <p style="text-align: center; font-size: 20px;">Dub Performance is just behind the Active Green & Ross. If coming north of kipling turn right into Active Green & Ross, if coming south of kipling turn left. Then follow the alley way at the end of the parking lot, till you see Dub Performance Mechanic Shop. </p>
+    </div>
+
+
+    <footer id="footer">
+
+      <div class="container">
+        <div class="row">
+          
+          <div class="col-md-6 footer-left">
+            <h3>Company's Services</h3>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="services.html">Our Services</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact Us</a>
+            </li>
+          </div>
+          
+          <div class="col-md-6 footer-right">
+
+            <div>
+              <i class="fa fa-envelope"></i>
+              <p><a href="mailto:dub_performance1@hotmail.com">dub_performance1@hotmail.com</a></p>
+            </div>
+
+            <div>
+              <a href="https://www.facebook.com/Dub_performance-626408714074072/"><i class="fa fa-facebook"></i> Our Facebook Page</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Bottom of Footer -->
+      <p id="copyright"> &#169; 2016 All rights reserved. | DubPerformance.ca | Created by Rogerio Ribeiro </p>
+
+      
+    </footer>
+    <script>
+
+      function initMap() {
+        var dubPerformance = {lat: 43.634374312, lng: -79.5309872};
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 19,
+          center: dubPerformance
+        });
+
+        var marker = new google.maps.Marker({
+          position: dubPerformance,
+          map: map,
+          title: 'Dub Performance (Mechanic Shop)'
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?callback=initMap&key=AIzaSyB1x3-tlkHT0CjkMkm-crhni7kbr6Ykl0g">
+    </script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="  crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </body>
+</html>
