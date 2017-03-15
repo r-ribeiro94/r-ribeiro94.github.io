@@ -15,67 +15,58 @@
   <body>
     
 
+    <header>
+      <ul style="width:175px; padding: 0;" class="side-nav fixed" id="slide-out">
+        <h1 style="text-align: center;"><i class="fa fa-camera" aria-hidden="true" style="color: white;"></i></h1>
+        <br>
+        <li><a href="#">HOME</a></li>
+        <!-- <div class="divider"></div> -->
+        <li><a href="#">ABOUT US</a></li>
+        <li><a href="#">SERVICES</a></li>
+        <li><a href="#">CONTACT US</a></li>
+      </ul>
+      <a href="#" data-activates="slide-out" class="button-collapse">Menu</a>
+    </header>
     
-    <!-- Page Content -->
-    <div class="container center-align">
-      <div class="row">
-          <!-- Side Nav -->
-          <div class="col s1">
-            <header>
-              <ul style="width:175px; padding: 0;" class="side-nav fixed">
-                <h1 style="text-align: center;"><i class="fa fa-camera" aria-hidden="true" style="color: white;"></i></h1>
-                <br>
-                <li><a href="#">HOME</a></li>
-                <!-- <div class="divider"></div> -->
-                <li><a href="#">ABOUT US</a></li>
-                <li><a href="#">SERVICES</a></li>
-                <li><a href="#">CONTACT US</a></li>
-              </ul>
-            </header>
-          </div>
-          <!-- End of Side Nav -->
-          
-          <!-- Page Content -->
-          <div class="col s11">
-            <div class="row">
-              <!-- Logo -->
-              <div class="col s12"><h1 class="logo"> LOGO </h1></div>
-              <!-- Video Player -->
-              <div class="col s12">
-                <div class="video-container">
-                  <!-- Copy & Pasted from YouTube -->
-                  <iframe width="560" height="349" src="//www.youtube.com/embed/Q8TXgCzxEnw?rel=0" frameborder="0"></iframe>
-                </div>
-              </div>
-
-              <!-- Information Text -->
-              <div class="col s12" style="margin-top: 20%;">
-                <h1>Welcome to, 6ix Show Photography!</h1>
-                <br>
-                <p class="black-text flow-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In non ante in velit efficitur mollis. 
-                Aenean a vestibulum tortor, quis rutrum mi. Nam cursus libero id mi aliquet, eget mattis justo venenatis. 
-                Maecenas commodo nibh et hendrerit laoreet. Nam at tellus mauris. Pellentesque luctus eu justo ut aliquet. 
-                Pellentesque et pharetra turpis, ut rhoncus massa. Mauris sit amet fermentum odio. Nunc hendrerit tempus congue. 
-                Duis at enim id urna blandit maximus vitae nec turpis. Morbi ultrices fermentum elementum. 
-                Quisque aliquam rutrum nisi, quis posuere odio lobortis aliquet. 
-                Cras ullamcorper, ligula ut fringilla accumsan, purus massa scelerisque risus, vel pharetra diam tellus quis leo. In hac habitasse platea dictumst. 
-                Maecenas in tellus ac ex sollicitudin condimentum et vulputate nibh.
-                </p>
-              </div>
-
-              <div class="col s12 center-align">
-                <h1>OUR STUDIO</h1>
-                <!-- Studio Picture -->
-                <img class="responsive-img" src="https://unsplash.it/1024/600/?random">
-                <a class="waves-effect waves-light btn-large black tourBtn">BOOK A TOUR</a>
-              </div>
+    <main>
+      <!-- Page Content -->
+      <div class="container center-align">
+        <div class="row">
+          <!-- Logo -->
+          <div class="col s12 offset-s0"><h1 class="logo"> LOGO </h1></div>
+          <!-- Video Player -->
+          <div class="col s12">
+            <div class="video-container">
+              <!-- Copy & Pasted from YouTube -->
+              <iframe width="560" height="349" src="//www.youtube.com/embed/Q8TXgCzxEnw?rel=0" frameborder="0"></iframe>
             </div>
           </div>
-          <!-- End of Page Content -->
+
+          <!-- Information Text -->
+          <div class="col s12" style="margin-top: 20%;">
+            <h1>Welcome to, 6ix Shot Photography!</h1>
+            <br>
+            <p class="black-text flow-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In non ante in velit efficitur mollis. 
+            Aenean a vestibulum tortor, quis rutrum mi. Nam cursus libero id mi aliquet, eget mattis justo venenatis. 
+            Maecenas commodo nibh et hendrerit laoreet. Nam at tellus mauris. Pellentesque luctus eu justo ut aliquet. 
+            Pellentesque et pharetra turpis, ut rhoncus massa. Mauris sit amet fermentum odio. Nunc hendrerit tempus congue. 
+            Duis at enim id urna blandit maximus vitae nec turpis. Morbi ultrices fermentum elementum. 
+            Quisque aliquam rutrum nisi, quis posuere odio lobortis aliquet. 
+            Cras ullamcorper, ligula ut fringilla accumsan, purus massa scelerisque risus, vel pharetra diam tellus quis leo. In hac habitasse platea dictumst. 
+            Maecenas in tellus ac ex sollicitudin condimentum et vulputate nibh.
+            </p>
+          </div>
+
+          <div class="col s12 center-align">
+            <h1>OUR STUDIO</h1>
+            <!-- Studio Picture -->
+            <img class="responsive-img" src="https://unsplash.it/1024/600/?random"><br>
+            <a class="waves-effect waves-light btn-large black tourBtn">BOOK A TOUR</a>
+          </div>
         </div>
-        <!-- End of Row -->
       </div>
-      <!-- End of Container -->
+    <!-- End of Container -->
+    </main>
       
       <div class="divider"></div>
       <footer class="page-footer white center-align">
@@ -100,6 +91,14 @@
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript">
+        $('.button-collapse').sideNav({
+            edge: 'left', // Choose the horizontal origin
+            closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+            draggable: true // Choose whether you can drag to open on touch screens
+          }
+        );
+    </script>
   </body>
 
 </html>

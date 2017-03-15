@@ -14,6 +14,24 @@ main {
 	text-align: center;
 }
 
+header, main, footer {
+  padding-left: 200px;
+}
+
+.button-collapse {
+	display: none;
+}
+@media only screen and (max-width : 992px) {
+  header, main, footer, {
+    padding-left: 0;
+  }
+
+  .button-collapse {
+  	display: block;
+  }
+
+}
+         
 .side-nav {
 	background: black !important;
 	
