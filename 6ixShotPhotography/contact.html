@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="custom_sass/Main/main-struct.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="custom_sass/Main/contact.css"  media="screen,projection"/>
+
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <style type="text/css">
+      
+      html, body, main, #thisRow{
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+      #map {
+        height: 50%;
+        width: 100%;
+      }
+
+      </style>
+  </head>
+
+  <body>
+    
+    <header id="navigation"></header>
+    
+    <main class="container center-align">
+      <div class="row" id="thisRow">
+        <!-- Logo -->
+        <h1 class="col s12">LOGO</h1>
+
+        <!-- Map -->
+        <div class="col s12" id="map"></div>
+
+        <!-- Contact Info -->
+        <div class="row">
+          <div class="col s6 left-align">
+            <h3>ADDRESS</h3>
+            <div class="divider black"></div>
+            <p>Location</p>
+            <p>Phone Number</p>
+          </div>
+
+          <div class="col s6 left-align">
+            <h3>HOURS</h3>
+            <div class="divider black"></div>
+            <p>MON - FRI 9AM - 4PM</p>
+            <p>SAT - 9AM - 2PM</p>
+            <p>SUN CLOSED</p>
+          </div>
+        </div>
+        
+        <div class="divider black" style="margin-top: 10%;"></div>
+        <div class="row">
+        <h1>Contact Us</h1>
+        <form class="col s12 left-align">
+          <div class="row">
+            <div class="input-field col s6">
+              <i class="material-icons prefix">account_circle</i>
+              <input id="first_name" type="text" class="validate">
+              <label for="first_name">First Name</label>
+            </div>
+            <div class="input-field col s6">
+              <i class="material-icons prefix">account_circle</i>
+              <input id="last_name" type="text" class="validate">
+              <label for="last_name">Last Name</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <i class="material-icons prefix">mail_outline</i>
+              <input id="email" type="email" class="validate">
+              <label for="email">Email</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <i class="material-icons prefix">mode_edit</i>
+              <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+              <label for="icon_prefix2">Send Us Your Inquiries ...</label>
+            </div>
+          </div>
+        
+        </form>
+        </div>
+        
+      </div>
+    </main>
+    
+      
+    <footer id="contactFooter"></footer>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>   
+    <!--Import jQuery before materialize.js--> 
+    <script type="text/javascript">
+      $('#navigation').on("click", "a.button-collapse", function() {
+
+          $('#navigation > a.button-collapse').sideNav({
+            edge: 'left', // Choose the horizontal origin
+            closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+            draggable: true // Choose whether you can drag to open on touch screens
+          }
+        );
+      });
+
+      $(function(){
+        $("#contactFooter").load("/partial-html/footer.html");
+        $('#navigation').load("/partial-html/navigation.html")
+      });
+
+
+      function initMap() {
+        var SixShotPhoto = {lat: 43.7001100, lng: -79.4163000};
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 10,
+          center: SixShotPhoto
+        });
+
+        var marker = new google.maps.Marker({
+          position: SixShotPhoto,
+          map: map,
+          title: 'Dub Performance (Mechanic Shop)'
+        });
+      }
+    </script>
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?callback=initMap&key=AIzaSyB1x3-tlkHT0CjkMkm-crhni7kbr6Ykl0g">
+    </script>
+  </body>
+
+</html>

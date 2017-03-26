@@ -1,0 +1,50 @@
+.aboutus{
+	background: #191919 !important;
+}
+
+
+.card-content {
+	> p, > h1 {
+		text-align: left !important;
+	}
+}
+
+.thumbnail:hover {
+    position:relative;
+    top: 0px;
+    left: 0px;
+    width:500px;
+    height:auto;
+    display:block;
+    z-index:999;
+}
+
+.row {
+    > div {
+        h5 {
+            font-style: italic;
+        }
+    }
+}
+
+.spacer {
+    margin-bottom: 10%;
+}
+
+.modal { 
+    width: 75% !important ; 
+    max-height: 100% !important ;
+
+    @media (min-width: 992px) {
+        overflow-y: hidden !important;
+    }
+}
+
+.modal-content {
+    > div {
+        > img {
+            width: 50%;
+            height: 50%;
+        }
+    }
+}

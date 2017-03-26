@@ -5,8 +5,9 @@
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-    <link type="text/css" rel="stylesheet" href="custom_sass/Main/index.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="custom_sass/Main/main-struct.css"  media="screen,projection"/>
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -15,18 +16,7 @@
   <body>
     
 
-    <header>
-      <ul style="width:175px; padding: 0;" class="side-nav fixed" id="slide-out">
-        <h1 style="text-align: center;"><i class="fa fa-camera" aria-hidden="true" style="color: white;"></i></h1>
-        <br>
-        <li><a href="#">HOME</a></li>
-        <!-- <div class="divider"></div> -->
-        <li><a href="#">ABOUT US</a></li>
-        <li><a href="#">SERVICES</a></li>
-        <li><a href="#">CONTACT US</a></li>
-      </ul>
-      <a href="#" data-activates="slide-out" class="button-collapse">Menu</a>
-    </header>
+    <header id="navigation"></header>
     
     <main>
       <!-- Page Content -->
@@ -67,37 +57,27 @@
       </div>
     <!-- End of Container -->
     </main>
-      
-      <div class="divider"></div>
-      <footer class="page-footer white center-align">
-        
-        <div class="container">
-          <div class="row">
-            <div class="col s3 facebook"><i class="fa fa-facebook" aria-hidden="true"></i></div>
-            <div class="col s3 instagram"><i class="fa fa-instagram" aria-hidden="true"></i></div>
-            <div class="col s3 twitter"><i class="fa fa-twitter" aria-hidden="true"></i></div>
-            <div class="col s3 youtube"><i class="fa fa-youtube-play" aria-hidden="true"></i></div>
-          </div>
-        </div>
-
-        <div class="footer-copyright white black-text">
-          <div class="container">
-            &copy; 2017 6ix Shot Photography, All rights reserved.
-          </div>
-        </div>
-
-      </footer>
+       
+    <footer id="footer"></footer>
 
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script type="text/javascript">
-        $('.button-collapse').sideNav({
-            edge: 'left', // Choose the horizontal origin
-            closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
-            draggable: true // Choose whether you can drag to open on touch screens
-          }
-        );
+        $('#navigation').on("click", "a.button-collapse", function() {
+
+            $('#navigation > a.button-collapse').sideNav({
+              edge: 'left', // Choose the horizontal origin
+              closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+              draggable: true // Choose whether you can drag to open on touch screens
+            }
+          );
+        });
+
+        $(function(){
+          $("#footer").load("/partial-html/footer.html");
+          $('#navigation').load("/partial-html/navigation.html")
+        });
     </script>
   </body>
 

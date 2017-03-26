@@ -1,0 +1,50 @@
+body {
+  display: flex;
+  min-height: 100%;
+  flex-direction: column; }
+
+main {
+  flex: 1;
+  padding-left: 200px !important; }
+
+.logo {
+  text-align: center; }
+
+header, footer > div.container, footer > div.footer-copyright {
+  padding-left: 200px !important; }
+
+.button-collapse {
+  display: none; }
+
+@media only screen and (max-width: 992px) {
+  header, main, footer > div.container, footer > div.footer-copyright {
+    padding-left: 0 !important; }
+
+  .button-collapse {
+    display: block; } }
+.side-nav {
+  background: black !important; }
+  .side-nav li a {
+    color: white !important; }
+
+.tourBtn {
+  margin-top: 5%; }
+
+.divider {
+  margin-bottom: 2.5%; }
+
+.facebook i {
+  font-size: 36px;
+  color: #3b5998; }
+
+.instagram i {
+  font-size: 36px;
+  color: #4c68d7; }
+
+.twitter i {
+  font-size: 36px;
+  color: #00aced; }
+
+.youtube i {
+  font-size: 36px;
+  color: #bb0000; }

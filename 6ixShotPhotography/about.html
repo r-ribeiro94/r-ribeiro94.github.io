@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
+    <link type="text/css" rel="stylesheet" href="custom_sass/Main/main-struct.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="custom_sass/Main/aboutus.css"  media="screen,projection"/>
+
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+
+  <body>
+    
+    <!-- Side Navigation -->
+    <header id="navigation"></header>
+    
+    <!-- Page Content -->
+    <main>
+      <!-- About Us Card -->
+      <div class="container center-align">
+        <div class="row">
+          <!-- Logo -->
+          <div class="col s12 offset-s0"><h1 class="logo"> LOGO </h1></div>
+
+          <!-- Card -->
+          <div class="col s12">
+            <div class="card horizontal aboutus">
+              <div class="card-image">
+                <img src="https://unsplash.it/500/500?image=1075">
+              </div>
+
+              <div class="card-stacked">
+                <div class="card-content white-text">
+                  <h1>About Us</h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum elit mi, eu venenatis mi finibus et. Praesent sagittis lorem at magna molestie, nec interdum dolor dapibus. Etiam nisl dui, finibus ut odio sed, tincidunt tempor mauris. In ac aliquet sem. Sed laoreet varius est eu ultricies. Pellentesque posuere justo quis lobortis faucibus. Maecenas ut nibh sit amet mi aliquam hendrerit. Ut convallis libero urna, sed accumsan tellus sodales vitae. Donec ultrices at odio nec tempor. Nulla quis lacus et augue tincidunt dictum a vitae tellus. Nullam at ullamcorper dolor, ut tempus elit. Donec ac eleifend orci. Pellentesque sed enim ut justo cursus porttitor vitae in erat. Phasellus ullamcorper tempus viverra. Nulla non suscipit dolor.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12">
+            <h1 class="black-text">Meet Our Team</h1>
+            <div class="divider black center-align" style="width: 50%; margin-right: auto; margin-left: auto;"></div>
+            
+            <!-- First Person -->
+            <div class="row">
+              <div class="col s4">
+                <a href="#persondetails" class="firstperson"><img src="http://placehold.it/300x300" class="circle responsive-img thumbnail"></a>
+                <h5>NAME</h5>
+              </div>
+
+              <!-- Second Person -->
+              <div class="col s4">
+                <a href="#persondetails" class="secondperson"><img src="http://placehold.it/300x300" class="circle responsive-img thumbnail"></a>
+                <h5>NAME</h5>
+              </div>
+
+              <!-- Third Person -->
+              <div class="col s4">             
+                <a href="#persondetails" class="thirdperson"><img src="http://placehold.it/300x300" class="circle responsive-img thumbnail"></a>
+                <h5>NAME</h5>
+              </div>
+            </div>
+
+            <div class="spacer"></div>
+
+            <div class="row"> 
+              <!-- Fourth Person -->
+              <div class="col s4">           
+                <a href="#persondetails" class="fourthperson"><img src="http://placehold.it/300x300" class="circle responsive-img thumbnail"></a>
+                <h5>NAME</h5>
+              </div>
+              
+              <!-- Fifth Person -->
+              <div class="col s4">                
+                <a href="#persondetails" class="fifthperson"><img src="http://placehold.it/300x300" class="circle responsive-img thumbnail"></a>
+                <h5>NAME</h5>
+              </div>
+              
+              <!-- Sixth Person -->
+              <div class="col s4">                
+                <a href="#persondetails" class="sixthperson"><img src="http://placehold.it/300x300" class="circle responsive-img thumbnail"></a>
+                <h5>NAME</h5>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+      <!-- End of Container -->
+    </main>
+
+    <!-- Main Modal (Photographer Info) -->
+    <div id="persondetails" class="modal">
+      <div class="modal-content">
+        <h4 class="center-align" id="name"></h4>
+        <div class="container">
+        <div class="row">
+          <img class="col s6" src="http://placehold.it/300x300" style="width: 50%; height: 50%;">
+          <p class="col s6" id="paragraph"></p>
+        </div>
+        </div>
+      </div>
+      <div class="divider"></div>
+      <div class="modal-footer">
+        <div class="container center-align">
+          <div class="row">
+            <div class="col s3 facebook"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+            <div class="col s3 instagram"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+            <div class="col s3 twitter"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+            <div class="col s3 youtube"><i class="fa fa-youtube-play" aria-hidden="true"></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer"></footer>
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/modal-content.js" ></script>
+    <script type="text/javascript">
+
+      $('#navigation').on("click", "a.button-collapse", function() {
+
+          $('#navigation > a.button-collapse').sideNav({
+            edge: 'left', // Choose the horizontal origin
+            closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+            draggable: true // Choose whether you can drag to open on touch screens
+          }
+        );
+      });
+
+
+        $(function(){
+          $("#footer").load("/partial-html/footer.html");
+          $('#navigation').load("/partial-html/navigation.html");
+        });
+    </script>
+  </body>
+
+</html>
