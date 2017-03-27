@@ -2,12 +2,13 @@
 <html>
   <head>
     <!--Import Google Icon Font-->
-    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <!--Import materialize.css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
     <link type="text/css" rel="stylesheet" href="custom_sass/Main/main-struct.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="custom_sass/Main/index.css"  media="screen,projection"/>
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -23,7 +24,7 @@
       <div class="container center-align">
         <div class="row">
           <!-- Logo -->
-          <div class="col s12 offset-s0"><h1 class="logo"> LOGO </h1></div>
+          <div class="col s12 offset-s0 white-text"><h1 class="logo"> LOGO </h1></div>
           <!-- Video Player -->
           <div class="col s12">
             <div class="video-container">
@@ -33,10 +34,10 @@
           </div>
 
           <!-- Information Text -->
-          <div class="col s12" style="margin-top: 20%;">
+          <div class="col s12 black white-text" style="margin-top: 20%;">
             <h1>Welcome to, 6ix Shot Photography!</h1>
             <br>
-            <p class="black-text flow-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In non ante in velit efficitur mollis. 
+            <p class="flow-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In non ante in velit efficitur mollis. 
             Aenean a vestibulum tortor, quis rutrum mi. Nam cursus libero id mi aliquet, eget mattis justo venenatis. 
             Maecenas commodo nibh et hendrerit laoreet. Nam at tellus mauris. Pellentesque luctus eu justo ut aliquet. 
             Pellentesque et pharetra turpis, ut rhoncus massa. Mauris sit amet fermentum odio. Nunc hendrerit tempus congue. 
@@ -48,10 +49,10 @@
           </div>
 
           <div class="col s12 center-align">
-            <h1>OUR STUDIO</h1>
+            <h1 class="white-text">OUR STUDIO</h1>
             <!-- Studio Picture -->
             <img class="responsive-img" src="https://unsplash.it/1024/600/?random"><br>
-            <a class="waves-effect waves-light btn-large black tourBtn">BOOK A TOUR</a>
+            <a class="waves-effect waves-light btn-large white black-text tourBtn">BOOK A TOUR</a>
           </div>
         </div>
       </div>
@@ -75,8 +76,8 @@
         });
 
         $(function(){
-          $("#footer").load("/partial-html/footer.html");
-          $('#navigation').load("/partial-html/navigation.html")
+          $("#footer").load("partial-html/footer.html");
+          $('#navigation').load("partial-html/navigation.html")
         });
     </script>
   </body>

@@ -23,9 +23,9 @@ header, footer > div.container, footer > div.footer-copyright {
   .button-collapse {
     display: block; } }
 .side-nav {
-  background: black !important; }
+  background: white !important; }
   .side-nav li a {
-    color: white !important; }
+    color: black !important; }
 
 .tourBtn {
   margin-top: 5%; }
@@ -35,16 +35,16 @@ header, footer > div.container, footer > div.footer-copyright {
 
 .facebook i {
   font-size: 36px;
-  color: #3b5998; }
+  color: white; }
 
 .instagram i {
   font-size: 36px;
-  color: #4c68d7; }
+  color: white; }
 
 .twitter i {
   font-size: 36px;
-  color: #00aced; }
+  color: white; }
 
 .youtube i {
   font-size: 36px;
-  color: #bb0000; }
+  color: white; }

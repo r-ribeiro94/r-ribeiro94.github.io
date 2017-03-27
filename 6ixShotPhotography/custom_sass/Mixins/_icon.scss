@@ -7,15 +7,15 @@
 
 	@if $color == 'facebook' {
 		font-size: $font-size;
-		color: $facebook;
+		color: white;
 	}@else if $color == 'instagram' {
 		font-size: $font-size;
-		color: $instagram;
+		color: white;
 	}@else if $color == 'twitter' {
 		font-size: $font-size;
-		color: $twitter;
+		color: white;
 	}@else if $color == 'youtube' {
 		font-size: $font-size;
-		color: $youtube;
+		color: white;
 	} 
 }
