@@ -130,15 +130,16 @@
     <script type="text/javascript" src="js/modal-content.js" ></script>
     <script type="text/javascript">
 
-      $('#navigation').on("click", "a.button-collapse", function() {
+        $('#navigation').on("click", "a.button-collapse", function() {
 
-          $('#navigation > a.button-collapse').sideNav({
-            edge: 'left', // Choose the horizontal origin
-            closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
-            draggable: true // Choose whether you can drag to open on touch screens
-          }
-        );
-      });
+            $('#navigation > nav > div > a.button-collapse').sideNav({
+              menuWidth: 200,
+              edge: 'left', // Choose the horizontal origin
+              closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+              draggable: true // Choose whether you can drag to open on touch screens
+            }
+          );
+        });
 
 
         $(function(){

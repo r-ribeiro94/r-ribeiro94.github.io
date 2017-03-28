@@ -36,9 +36,7 @@
     
     <main class="container center-align">
       <div class="row" id="thisRow">
-        <!-- Logo -->
-        <h1 class="col s12">LOGO</h1>
-
+      
         <!-- Map -->
         <div class="col s12" id="map"></div>
 
@@ -106,7 +104,8 @@
     <script type="text/javascript">
       $('#navigation').on("click", "a.button-collapse", function() {
 
-          $('#navigation > a.button-collapse').sideNav({
+          $('#navigation > nav > div > a.button-collapse').sideNav({
+            menuWidth: 200,
             edge: 'left', // Choose the horizontal origin
             closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
             draggable: true // Choose whether you can drag to open on touch screens

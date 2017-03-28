@@ -4,28 +4,10 @@ body {
   flex-direction: column; }
 
 main {
-  flex: 1;
-  padding-left: 200px !important; }
+  flex: 1; }
 
-.logo {
-  text-align: center; }
-
-header, footer > div.container, footer > div.footer-copyright {
-  padding-left: 200px !important; }
-
-.button-collapse {
-  display: none; }
-
-@media only screen and (max-width: 992px) {
-  header, main, footer > div.container, footer > div.footer-copyright {
-    padding-left: 0 !important; }
-
-  .button-collapse {
-    display: block; } }
-.side-nav {
-  background: white !important; }
-  .side-nav li a {
-    color: black !important; }
+.navbar-material .nav-wrapper .brand-logo img {
+  height: 64px; }
 
 .tourBtn {
   margin-top: 5%; }
@@ -35,16 +17,16 @@ header, footer > div.container, footer > div.footer-copyright {
 
 .facebook i {
   font-size: 36px;
-  color: white; }
+  color: #3b5998; }
 
 .instagram i {
   font-size: 36px;
-  color: white; }
+  color: #4c68d7; }
 
 .twitter i {
   font-size: 36px;
-  color: white; }
+  color: #00aced; }
 
 .youtube i {
   font-size: 36px;
-  color: white; }
+  color: #bb0000; }
