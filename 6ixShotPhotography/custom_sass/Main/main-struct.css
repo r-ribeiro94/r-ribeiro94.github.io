@@ -9,6 +9,23 @@ main {
 .navbar-material .nav-wrapper .brand-logo img {
   height: 64px; }
 
+nav > div > ul.nav-margin {
+  margin-top: 3.5%;
+  margin-left: 12.5%; }
+  @media (min-width: 993px) and (max-width: 1200px) {
+    nav > div > ul.nav-margin {
+      margin-top: 7.5%;
+      margin-left: 17.5%; } }
+  @media (min-width: 1201px) and (max-width: 1500px) {
+    nav > div > ul.nav-margin {
+      margin-top: 5.5%;
+      margin-left: 15%; } }
+  @media (min-width: 1501px) and (max-width: 1700px) {
+    nav > div > ul.nav-margin {
+      margin-top: 5%; } }
+  nav > div > ul.nav-margin > li > a {
+    font-size: 24px; }
+
 .tourBtn {
   margin-top: 5%; }
 
