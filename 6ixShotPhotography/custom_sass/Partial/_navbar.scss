@@ -1,0 +1,24 @@
+nav > div > ul.nav-margin {
+	margin-top: 3.5%; 
+	margin-left: 12.5%;
+	
+	@media(min-width: 993px) and (max-width: 1200px) {
+		margin-top: 7.5%;
+		margin-left: 17.5%;
+
+	}
+
+	@media(min-width: 1201px) and (max-width: 1500px) {
+		margin-top: 5.5%;
+		margin-left: 15%;
+
+	}
+
+	@media(min-width: 1501px) and (max-width: 1700px) {
+		margin-top: 5%;
+	}
+
+	> li > a {
+		font-size: 24px;
+	}
+}

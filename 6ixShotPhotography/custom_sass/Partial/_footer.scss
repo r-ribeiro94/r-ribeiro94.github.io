@@ -1,0 +1,28 @@
+// Footer Content
+.divider {
+	margin-bottom: 2.5%;
+}
+
+.facebook {
+	i {
+		@include fontawesomestyle("facebook");
+	}
+}
+
+.instagram {
+	i {
+		@include fontawesomestyle("instagram");
+	}
+}
+
+.twitter {
+	i {
+		@include fontawesomestyle("twitter");
+	}
+}
+
+.youtube {
+	i {
+		@include fontawesomestyle("youtube");
+	}
+}

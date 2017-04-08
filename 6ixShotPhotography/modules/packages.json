@@ -1,0 +1,16 @@
+{
+	"packages" : [
+
+		{
+			"title": "Performers Package",
+			"price": "$99.99,
+            "description": "<ul><li>3 photos professionally edited in both B+W and colour</li>
+                  <li>Client keeps all proofs</li>
+                  <li>3 outfits</li>
+                  <li>Hair and makeup extra</li>
+                  <li>Client gets to choose song playlist</li>
+                </ul>"
+		}
+	]
+	
+}

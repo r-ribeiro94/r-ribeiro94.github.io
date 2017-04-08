@@ -1,0 +1,31 @@
+{
+	"packages" : [
+		{	
+			"type": "Standard",
+			"title": "Performer's Package",
+			"price": "$99.99",
+			"list" : [
+	            "3 photos professionally edited in both B+W and colour",
+	            "Client keeps all proofs",
+	            "3 outfits",
+	            "Hair and makeup extra",
+	            "Client gets to choose song playlist"
+            ]
+
+		},		
+		{	
+			"type": "Deluxe",
+			"title": "Super Star Package",
+			"price": "$109.99",
+			"list" : [
+	            "6 photos professionally edited in both B+W and colour",
+	            "Client keeps all proofs",
+	            "No time limit",
+	            "Unlimited outfits",
+	            "Hair and makeup extra",
+	            "Client gets to choose song playlist"
+            ]
+
+		}
+	]
+}

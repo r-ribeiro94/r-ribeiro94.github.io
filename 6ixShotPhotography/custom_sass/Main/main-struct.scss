@@ -1,6 +1,6 @@
 @import '../Mixins/icon';
 
-body {
+#wrapper {
 	display: flex;
 	min-height: 100%;
 	flex-direction: column;
@@ -14,61 +14,11 @@ main {
     height: 64px;
 }
 
-nav > div > ul.nav-margin {
-	margin-top: 3.5%; 
-	margin-left: 12.5%;
-	
-	@media(min-width: 993px) and (max-width: 1200px) {
-		margin-top: 7.5%;
-		margin-left: 17.5%;
-
-	}
-
-	@media(min-width: 1201px) and (max-width: 1500px) {
-		margin-top: 5.5%;
-		margin-left: 15%;
-
-	}
-
-	@media(min-width: 1501px) and (max-width: 1700px) {
-		margin-top: 5%;
-	}
-
-	> li > a {
-		font-size: 24px;
-	}
-}
+@import '../Partial/navbar';
 
 // Tour Section
 .tourBtn {
 	margin-top: 5%;
 }
 
-// Footer Content
-.divider {
-	margin-bottom: 2.5%;
-}
-
-.facebook {
-	i {
-		@include fontawesomestyle("facebook");
-	}
-}
-
-.instagram {
-	i {
-		@include fontawesomestyle("instagram");
-	}
-}
-
-.twitter {
-	i {
-		@include fontawesomestyle("twitter");
-	}
-}
-
-.youtube {
-	i {
-		@include fontawesomestyle("youtube");
-	}
-}
+@import '../Partial/footer';

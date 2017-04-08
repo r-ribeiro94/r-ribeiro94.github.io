@@ -11,6 +11,8 @@
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+    <script src="modules/packages.js"></script>
 
     <style type="text/css">
       .card-panel {
@@ -25,7 +27,7 @@
     </style>
   </head>
 
-  <body>
+  <body ng-app="myApp" ng-controller="PackagesController">
     
 
     <header id="navigation"></header>
@@ -36,83 +38,107 @@
         <div class="row">
 
           <div class="col s12"><h1>Our Services</h1></div>
-
-          <div class="divider black" style="width: 100%; margin-right: auto; margin-left: auto; margin-bottom: 5%;"></div>
+          <p class="flow-text">Clients will be seated in lounge upon entry and offered a beverage. The photographer will than escort them to the studio, taking any personal clothing that the customer wants to be put aside while providing exceptional customer service. </p>
           
           <!-- Services -->
           <div class="col s12 m12 l4">
-            <div class="card-panel black white-text">
-              <h1><i class="fa fa-camera" aria-hidden="true"></i></h1>
-              <h4>Photography</h4>
-              <span>Quality and professional photo sessions and editing.</span>
-            </div>
+            <a href="#headshots" class="headshots">
+              <div class="card-panel black white-text">
+                <h1><i class="fa fa-camera" aria-hidden="true"></i></h1>
+                <h4>Headshots</h4>
+                <span>Quality and professional photo sessions and editing.</span>
+              </div>
+            </a>
           </div>
 
           <div class="col s12 m12 l4">
-            <div class="card-panel black white-text">
-              <h1><i class="fa fa-bolt" aria-hidden="true"></i></h1>
-              <h4>Quick Service</h4>
-              <span>Organized and quick service when dealing with the client.</span>
-            </div>
+            <a href="#weddings" class="weddings">
+              <div class="card-panel black white-text">
+                <h1><i class="fa fa-bolt" aria-hidden="true"></i></h1>
+                <h4>Weddings</h4>
+                <span>Organized and quick service when dealing with the client.</span>
+              </div>
+            </a>
           </div>
 
           <div class="col s12 m12 l4" style="margin-bottom: 5%;">
-            <div class="card-panel black white-text">
-              <h1><i class="fa fa-user" aria-hidden="true"></i></h1>
-              <h4>Customer Service</h4>
-              <span>Customers are greated with exceptional customer service, by directing them to the studio and taking their attire.</span>
-            </div>
+            <a href="#fashion" class="fashion">
+              <div class="card-panel black white-text">
+                <h1><i class="fa fa-user" aria-hidden="true"></i></h1>
+                <h4>Fashion</h4>
+                <span>Customers are greated with exceptional customer service, by directing them to the studio and taking their attire.</span>
+              </div>
+            </a>
           </div>
           <!-- End of Services -->
           
           <div class="divider black" style="width: 100%; margin-right: auto; margin-left: auto; margin-bottom: 5%;"></div>
           
-          <!-- Packages -->
-          <div class="col s12"><h1>Packages</h1></div>
-        
-          <div class=" col s12 card horizontal left-align">
-            <div class="card-image">
-              <img src="http://placehold.it/350/000000/fff?text=Standard" style="height: 100%;">
-            </div>
-            <div class="card-stacked">
-              <div class="card-content">
-                <h5>Performers Package</h5>
-                <ul>
-                  <li>3 photos professionally edited in both B+W and colour</li>
-                  <li>Client keeps all proofs</li>
-                  <li>3 outfits</li>
-                  <li>Hair and makeup extra</li>
-                  <li>Client gets to choose song playlist</li>
-                </ul>
-              </div>
-              <div class="card-action right-align">
-                $99.99
-              </div>
-            </div>
-          </div>
+          <!-- Headshots Packages -->
+          <div id="headshots" class="animated slideInUp">
+            <div class="col s12"><h1>Headshot Packages</h1></div>
+            <div class="divider black" style="width: 50%; margin-right: auto; margin-left: auto;"></div>
           
-          <div class=" col s12 card horizontal left-align">
-            <div class="card-image">
-              <img src="http://placehold.it/350/000000/fff?text=Deluxe" style="height: 100%;">
-            </div>
-            <div class="card-stacked">
-              <div class="card-content">
-                <h5>Super Star Package</h5>
-                <ul>
-                  <li>6 photos professionally edited in both B+W and colour</li>
-                  <li>Client keeps all proofs</li>
-                  <li>no time limit</li>
-                  <li>unlimited outfits</li>
-                  <li>hair and makeup extra</li>
-                  <li>Client gets to choose song playlist</li>
-                </ul>
+            <div class=" col s12 card horizontal left-align" ng-repeat="package in package">
+              <div class="card-image">
+                <img src="http://placehold.it/350/000000/fff?text={{package.type}}" style="height: 100%;">
               </div>
-              <div class="card-action right-align">
-                $109.99
+              <div class="card-stacked">
+                <div class="card-content">
+                  <h5>{{package.title}}</h5>
+                  <ul>
+                    <li ng-repeat="details in package.list">{{details}}</li>
+                  </ul>
+                </div>
+                <div class="card-action right-align">
+                  {{package.price}}
+                </div>
               </div>
             </div>
           </div>
+
+          
+          <!-- Wedding Packages -->
+          <div id="weddings" class="animated slideInUp" style="display: none;">
+            <div class="col s12"><h1>Wedding Packages</h1></div>
+            <div class="divider black" style="width: 50%; margin-right: auto; margin-left: auto;"></div>
+            
+
+            <div class=" col s12 card horizontal left-align">
+              <div class="card-image">
+                <img src="http://placehold.it/350/000000/fff?text=''" style="height: 100%;">
+              </div>
+              <div class="card-stacked">
+                <div class="card-content">
+                  <h3>For pricing and details, please contact us.</h3>
+                </div>
+                <div class="card-action right-align">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Fashion Packages -->
+          <div id="fashion" class="animated slideInUp" style="display: none;">
+            <div class="col s12"><h1>Fashion Packages</h1></div>
+            <div class="divider black" style="width: 50%; margin-right: auto; margin-left: auto;"></div>
+
+            <div class=" col s12 card horizontal left-align">
+              <div class="card-image">
+                <img src="http://placehold.it/350/000000/fff?text=''" style="height: 100%;">
+              </div>
+              <div class="card-stacked">
+                <div class="card-content">
+                  <h3>For pricing and details, please contact us.</h3>
+                </div>
+                <div class="card-action right-align">
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
+        <!-- End of Row -->
       </div>
     <!-- End of Container -->
     </main>
@@ -123,6 +149,7 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script type="text/javascript">
+
         $('#navigation').on("click", "a.button-collapse", function() {
 
             $('#navigation > nav > div > a.button-collapse').sideNav({
@@ -138,6 +165,28 @@
           $("#footer").load("partial-html/footer.html");
           $('#navigation').load("partial-html/navigation.html")
         });
+
+        // Show only headshot packages
+        $('.headshots').on("click", function() {
+          $('#headshots').css({'display': 'block'});
+          $('#weddings').css({'display': 'none'});
+          $('#fashion').css({'display': 'none'});
+        });
+
+        // Show only wedding packages
+        $('.weddings').on("click", function() {
+          $('#headshots').css({'display': 'none'});
+          $('#weddings').css({'display': 'block'});
+          $('#fashion').css({'display': 'none'});
+        });
+
+        // Show only headshot packages
+        $('.fashion').on("click", function() {
+          $('#headshots').css({'display': 'none'});
+          $('#weddings').css({'display': 'none'});
+          $('#fashion').css({'display': 'block'});
+        });
+
     </script>
   </body>
 
