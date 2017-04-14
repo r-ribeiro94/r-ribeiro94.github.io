@@ -47,3 +47,10 @@ nav > div > ul.nav-margin {
 .youtube i {
   font-size: 36px;
   color: #bb0000; }
+
+.footer-copyright > div > div {
+  font-size: 12px; }
+  .footer-copyright > div > div a {
+    text-decoration: none;
+    color: inherit;
+    font-style: italic; }

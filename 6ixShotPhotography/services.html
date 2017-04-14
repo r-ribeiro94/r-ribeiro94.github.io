@@ -37,14 +37,14 @@
       <div class="container center-align">
         <div class="row">
 
+          <!-- Services Title -->
           <div class="col s12"><h1>Our Services</h1></div>
-          <p class="flow-text">Clients will be seated in lounge upon entry and offered a beverage. The photographer will than escort them to the studio, taking any personal clothing that the customer wants to be put aside while providing exceptional customer service. </p>
           
           <!-- Services -->
           <div class="col s12 m12 l4">
             <a href="#headshots" class="headshots">
               <div class="card-panel black white-text">
-                <h1><i class="fa fa-camera" aria-hidden="true"></i></h1>
+                <img src="/images/camera-portrait-mode.svg" style="width: 50%; height: 50%;">
                 <h4>Headshots</h4>
                 <span>Quality and professional photo sessions and editing.</span>
               </div>
@@ -54,7 +54,7 @@
           <div class="col s12 m12 l4">
             <a href="#weddings" class="weddings">
               <div class="card-panel black white-text">
-                <h1><i class="fa fa-bolt" aria-hidden="true"></i></h1>
+                <img src="/images/wedding-rings-couple.svg" style="width: 50%; height: 50%;">
                 <h4>Weddings</h4>
                 <span>Organized and quick service when dealing with the client.</span>
               </div>
@@ -64,7 +64,7 @@
           <div class="col s12 m12 l4" style="margin-bottom: 5%;">
             <a href="#fashion" class="fashion">
               <div class="card-panel black white-text">
-                <h1><i class="fa fa-user" aria-hidden="true"></i></h1>
+                <img src="/images/photographer.svg" style="width: 50%; height: 50%;">
                 <h4>Fashion</h4>
                 <span>Customers are greated with exceptional customer service, by directing them to the studio and taking their attire.</span>
               </div>
@@ -75,13 +75,13 @@
           <div class="divider black" style="width: 100%; margin-right: auto; margin-left: auto; margin-bottom: 5%;"></div>
           
           <!-- Headshots Packages -->
-          <div id="headshots" class="animated slideInUp">
-            <div class="col s12"><h1>Headshot Packages</h1></div>
+          <div id="headshots" class="col s12 animated slideInUp center-align">
+            <h1>Headshot Packages</h1>
             <div class="divider black" style="width: 50%; margin-right: auto; margin-left: auto;"></div>
           
-            <div class=" col s12 card horizontal left-align" ng-repeat="package in package">
-              <div class="card-image">
-                <img src="http://placehold.it/350/000000/fff?text={{package.type}}" style="height: 100%;">
+            <div class="card horizontal left-align" ng-repeat="package in package">
+              <div class="card-image left-align">
+                <img src="http://placehold.it/350/000000/fff?text={{package.type}}" style="height: 100%; width: 100%;">
               </div>
               <div class="card-stacked">
                 <div class="card-content">
@@ -99,12 +99,12 @@
 
           
           <!-- Wedding Packages -->
-          <div id="weddings" class="animated slideInUp" style="display: none;">
+          <div id="weddings" class="col s12 animated slideInUp" style="display: none;">
             <div class="col s12"><h1>Wedding Packages</h1></div>
             <div class="divider black" style="width: 50%; margin-right: auto; margin-left: auto;"></div>
             
 
-            <div class=" col s12 card horizontal left-align">
+            <div class="card horizontal left-align">
               <div class="card-image">
                 <img src="http://placehold.it/350/000000/fff?text=''" style="height: 100%;">
               </div>
@@ -119,7 +119,7 @@
           </div>
 
           <!-- Fashion Packages -->
-          <div id="fashion" class="animated slideInUp" style="display: none;">
+          <div id="fashion" class="col s12 animated slideInUp" style="display: none;">
             <div class="col s12"><h1>Fashion Packages</h1></div>
             <div class="divider black" style="width: 50%; margin-right: auto; margin-left: auto;"></div>
 
