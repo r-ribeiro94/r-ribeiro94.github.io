@@ -2,10 +2,15 @@
   .studio-div {
     padding: 100px !important; } }
 
+#wrapper {
+  margin: 0 auto !important; }
+
 .carousel-slider, .carousel-item, a.carousel-item > img {
-  height: 850px !important; }
+  margin: 0.5% auto !important;
+  width: 85%;
+  height: 650px !important; }
   @media (max-width: 992px) {
     .carousel-slider, .carousel-item, a.carousel-item > img {
-      width: 100%;
+      width: 95%;
       height: 400px !important;
       margin-bottom: 0; } }
