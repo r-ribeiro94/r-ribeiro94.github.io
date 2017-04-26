@@ -17,7 +17,6 @@
   
   <header id="navigation"></header>
   <main>
-
     <div id="wrapper">
       <div class="carousel carousel-slider">
         <a class="carousel-item" href="#one!"><img src="http://lorempixel.com/1920/1024/fashion/10"></a>
@@ -26,28 +25,8 @@
         <a class="carousel-item" href="#four!"><img src="http://lorempixel.com/1920/1024/fashion/4"></a>
       </div>
     </div>
-
-    <!-- Information Text -->
-    <div id="info" class="animated container" style="padding-top: 150px; padding-bottom: 150px;">
-      <p id="info-text" class="flow-text animated center-align">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In non ante in velit efficitur mollis. 
-      Aenean a vestibulum tortor, quis rutrum mi. Nam cursus libero id mi aliquet, eget mattis justo venenatis. 
-      Maecenas commodo nibh et hendrerit laoreet. Nam at tellus mauris. Pellentesque luctus eu justo ut aliquet. 
-      Pellentesque et pharetra turpis, ut rhoncus massa. Mauris sit amet fermentum odio. Nunc hendrerit tempus congue. 
-      Duis at enim id urna blandit maximus vitae nec turpis. Morbi ultrices fermentum elementum. 
-      Quisque aliquam rutrum nisi, quis posuere odio lobortis aliquet. 
-      Cras ullamcorper, ligula ut fringilla accumsan, purus massa scelerisque risus, vel pharetra diam tellus quis leo. In hac habitasse platea dictumst. 
-      Maecenas in tellus ac ex sollicitudin condimentum et vulputate nibh.
-      </p>
-    </div>
-    
-    <div class="center-align black studio-div" style="padding-top: 200px; padding-bottom: 200px;">
-      <h1 id="studio-title" class="white-text animated">OUR STUDIO</h1>
-      <!-- Studio Picture -->
-      <img id="studio-pic" class="responsive-img animated" src="https://unsplash.it/1024/600/?random"><br>
-      <a id="studio-btn" class="waves-effect waves-light btn-large white black-text tourBtn animated">BOOK A TOUR</a>
-    </div>
-    <!-- End of Container -->
   </main>
+  <!-- End of Main -->
 
   <footer id="footer"></footer>
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
@@ -70,27 +49,6 @@
         $("#footer").load("partial-html/footer.html");
         $('#navigation').load("partial-html/navigation.html");
       });
-
-      $('#info-text').css('opacity', 0);
-      $('#info-text').waypoint(function() {
-          $('#info-text').addClass('slideInUp').css('opacity', 1);
-      }, { offset: '50%' });
-
-      // Studio Pictures
-      $('#studio-title').css('opacity', 0);
-      $('#studio-title').waypoint(function() {
-          $('#studio-title').addClass('slideInLeft').css('opacity', 1);
-      }, { offset: '50%' });
-
-      $('#studio-pic').css('opacity', 0);
-      $('#studio-pic').waypoint(function() {
-          $('#studio-pic').addClass('zoomIn').css('opacity', 1);
-      }, { offset: '50%' });
-
-      $('#studio-btn').css('opacity', 0);
-      $('#studio-btn').waypoint(function() {
-          $('#studio-btn').addClass('slideInUp').css('opacity', 1);
-      }, { offset: '85%' });
 
       $('.carousel.carousel-slider').carousel({fullWidth: true, indicators: true});
       autoplay();

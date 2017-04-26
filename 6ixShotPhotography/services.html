@@ -44,7 +44,7 @@
           <div class="col s12 m12 l4">
             <a href="#headshots" class="headshots">
               <div class="card-panel black white-text">
-                <img src="images/camera-portrait-mode.svg" style="width: 50%; height: 50%;">
+                <img src="/images/camera-portrait-mode.svg" style="width: 50%; height: 50%;">
                 <h4>Headshots</h4>
                 <span>Quality and professional photo sessions and editing.</span>
               </div>
@@ -54,7 +54,7 @@
           <div class="col s12 m12 l4">
             <a href="#weddings" class="weddings">
               <div class="card-panel black white-text">
-                <img src="images/wedding-rings-couple.svg" style="width: 50%; height: 50%;">
+                <img src="/images/wedding-rings-couple.svg" style="width: 50%; height: 50%;">
                 <h4>Weddings</h4>
                 <span>Organized and quick service when dealing with the client.</span>
               </div>
@@ -64,7 +64,7 @@
           <div class="col s12 m12 l4" style="margin-bottom: 5%;">
             <a href="#fashion" class="fashion">
               <div class="card-panel black white-text">
-                <img src="images/photographer.svg" style="width: 50%; height: 50%;">
+                <img src="/images/photographer.svg" style="width: 50%; height: 50%;">
                 <h4>Fashion</h4>
                 <span>Customers are greated with exceptional customer service, by directing them to the studio and taking their attire.</span>
               </div>
@@ -72,71 +72,6 @@
           </div>
           <!-- End of Services -->
           
-          <div class="divider black" style="width: 100%; margin-right: auto; margin-left: auto; margin-bottom: 5%;"></div>
-          
-          <!-- Headshots Packages -->
-          <div id="headshots" class="col s12 animated slideInUp center-align">
-            <h1>Headshot Packages</h1>
-            <div class="divider black" style="width: 50%; margin-right: auto; margin-left: auto;"></div>
-          
-            <div class="card horizontal left-align" ng-repeat="package in package">
-              <div class="card-image left-align">
-                <img src="http://placehold.it/350/000000/fff?text={{package.type}}" style="height: 100%; width: 100%;">
-              </div>
-              <div class="card-stacked">
-                <div class="card-content">
-                  <h5>{{package.title}}</h5>
-                  <ul>
-                    <li ng-repeat="details in package.list"><i class="fa fa-chevron-right" aria-hidden="true"></i> {{details}}</li>
-                  </ul>
-                </div>
-                <div class="card-action right-align">
-                  {{package.price}}
-                </div>
-              </div>
-            </div>
-          </div>
-
-          
-          <!-- Wedding Packages -->
-          <div id="weddings" class="col s12 animated slideInUp" style="display: none;">
-            <div class="col s12"><h1>Wedding Packages</h1></div>
-            <div class="divider black" style="width: 50%; margin-right: auto; margin-left: auto;"></div>
-            
-
-            <div class="card horizontal left-align">
-              <div class="card-image">
-                <img src="http://placehold.it/350/000000/fff?text=''" style="height: 100%;">
-              </div>
-              <div class="card-stacked">
-                <div class="card-content">
-                  <h3>For pricing and details, please contact us.</h3>
-                </div>
-                <div class="card-action right-align">
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Fashion Packages -->
-          <div id="fashion" class="col s12 animated slideInUp" style="display: none;">
-            <div class="col s12"><h1>Fashion Packages</h1></div>
-            <div class="divider black" style="width: 50%; margin-right: auto; margin-left: auto;"></div>
-
-            <div class=" col s12 card horizontal left-align">
-              <div class="card-image">
-                <img src="http://placehold.it/350/000000/fff?text=''" style="height: 100%;">
-              </div>
-              <div class="card-stacked">
-                <div class="card-content">
-                  <h3>For pricing and details, please contact us.</h3>
-                </div>
-                <div class="card-action right-align">
-                </div>
-              </div>
-            </div>
-          </div>
-
         </div>
         <!-- End of Row -->
       </div>
@@ -164,27 +99,6 @@
         $(function(){
           $("#footer").load("partial-html/footer.html");
           $('#navigation').load("partial-html/navigation.html")
-        });
-
-        // Show only headshot packages
-        $('.headshots').on("click", function() {
-          $('#headshots').css({'display': 'block'});
-          $('#weddings').css({'display': 'none'});
-          $('#fashion').css({'display': 'none'});
-        });
-
-        // Show only wedding packages
-        $('.weddings').on("click", function() {
-          $('#headshots').css({'display': 'none'});
-          $('#weddings').css({'display': 'block'});
-          $('#fashion').css({'display': 'none'});
-        });
-
-        // Show only headshot packages
-        $('.fashion').on("click", function() {
-          $('#headshots').css({'display': 'none'});
-          $('#weddings').css({'display': 'none'});
-          $('#fashion').css({'display': 'block'});
         });
 
     </script>
