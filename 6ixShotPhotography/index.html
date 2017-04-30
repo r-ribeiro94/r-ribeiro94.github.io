@@ -15,25 +15,34 @@
 </head>
 <body>
   
-  <header id="navigation"></header>
+  <header id="navigation" class=""></header>
   <main>
-    <div id="wrapper">
+    <div id="wrapper" class="white">
       <div class="carousel carousel-slider">
-        <a class="carousel-item" href="#one!"><img src="http://lorempixel.com/1920/1024/fashion/10"></a>
-        <a class="carousel-item" href="#two!"><img src="http://lorempixel.com/1920/1024/fashion/5"></a>
-        <a class="carousel-item" href="#three!"><img src="http://lorempixel.com/1920/1024/fashion/3"></a>
-        <a class="carousel-item" href="#four!"><img src="http://lorempixel.com/1920/1024/fashion/4"></a>
+        <a class="carousel-item" href="#one!"><img src="images/Carasouel/item1.JPG"></a>
+        <a class="carousel-item" href="#two!"><img src="images/Carasouel/item2.JPG"></a>
+        <a class="carousel-item" href="#three!"><img src="images/Carasouel/item3.JPG"></a>
+        <a class="carousel-item" href="#four!"><img src="images/Carasouel/item4.JPG"></a>
+        <a class="carousel-item" href="#four!"><img src="images/Carasouel/item5.JPG"></a>
+        <a class="carousel-item" href="#four!"><img src="images/Carasouel/item6.JPG"></a>
+        <a class="carousel-item" href="#four!"><img src="images/Carasouel/item7.JPG"></a>
+        <a class="carousel-item" href="#four!"><img src="images/Carasouel/item8.JPG"></a>
+
       </div>
     </div>
   </main>
   <!-- End of Main -->
 
-  <footer id="footer"></footer>
+  <footer id="footer" style="margin-top: 3.5%;"></footer>
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
   <script type="text/javascript">
     $(document).ready(function(){
+
+      setTimeout(function() {
+        $('#navigation > nav').addClass('slideInDown').css("opacity", "1");
+      }, 1000);
 
       $('#navigation').on("click", "a.button-collapse", function() {
 
@@ -47,7 +56,7 @@
 
       $(function(){
         $("#footer").load("partial-html/footer.html");
-        $('#navigation').load("partial-html/navigation.html");
+        $('#navigation').load("partial-html/index-nav.html");
       });
 
       $('.carousel.carousel-slider').carousel({fullWidth: true, indicators: true});

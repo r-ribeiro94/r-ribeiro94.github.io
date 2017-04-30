@@ -27,8 +27,15 @@
       .carousel-inner > .item > img,
       .carousel-inner > .item > a > img {
           width: 70%;
-          height: 400px;
+          height: 650px;
           margin: auto;
+      }
+
+      @media only screen and (max-width: 992px) {
+        .carousel-inner > .item > img,
+        .carousel-inner > .item > a > img {
+            height: 400px;
+        }
       }
 
       .carousel-control.left, .carousel-control.right {
@@ -90,24 +97,28 @@
 
   <body>
 
-    <nav class="navbar navbar-default" id="topnavbar">
+    <nav class="navbar navbar-default">
       <div class="container-fluid">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavBar">
+            <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <img class="brand" src="images/transparent_dub.gif" alt=" "/>
+          <a class="navbar-brand" href="#"><img src="images/transparent_dub.gif">
+          </a>
         </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
+        <div class="navbar-collapse collapse" id="myNavBar">
           <ul class="nav navbar-nav navbar-right">
-              <li><a href="index.html">HOME</a></li>
-              <li><a href="services.html">SERVICES</a></li>
-              <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+            <li><a href="services.html"><i class="fa fa-wrench" aria-hidden="true"></i> Services</a></li>
+            <li><a href="contact.html"><i class="fa fa-address-book" aria-hidden="true"></i> Contact</a></li>
           </ul>
         </div>
+        <!--/.nav-collapse -->
       </div>
+      <!--/.container-fluid -->
     </nav>
 
     <!-- Carousel -->
@@ -120,21 +131,17 @@
 
       <div class="carousel-inner">
         <div class="item active">
-          <a href="#"><img src="https://scontent-yyz1-1.xx.fbcdn.net/v/t1.0-9/1622079_652289344819342_902127278_n.jpg?oh=717c7af01ff97287111eee35ead50423&oe=5889C166" /></a>
+          <a href="#"><img src="images/carousel-img1.jpg" /></a>
         </div>
-<!--         <div class="item">
-          <a href="#"><img src="http://placekitten.com/1600/600" /></a>
-          <div class="carousel-caption">
-            <h3>Meow</h3>
-            <p>Just Kitten Around</p>
-          </div>
-        </div> -->
         <div class="item">
-          <a href="#"><img src="https://scontent-yyz1-1.xx.fbcdn.net/v/t1.0-9/13697010_1099117340136538_859139345327291551_n.jpg?oh=5c3b7f1a601e711ee5088c6b66e13e81&oe=58B7F60B" /></a>
+          <a href="#"><img src="images/carousel-img2.jpg" /></a>
           <div class="carousel-caption">
             <h3>Volkswagen</h3>
             <p>Specializing in all your Volkswagen/Audi needs.</p>
           </div>
+        </div>
+        <div class="item">
+          <a href="#"><img src="images/carousel-img3.jpg" /></a>
         </div>
       </div>
 

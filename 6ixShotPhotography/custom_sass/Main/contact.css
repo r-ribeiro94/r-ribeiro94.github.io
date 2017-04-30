@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Oxygen");
 html, body {
   height: 0;
   margin: 0;
@@ -11,35 +12,34 @@ html, body {
 main {
   flex: 1; }
 
-.navbar-material .nav-wrapper .brand-logo img {
-  height: 64px; }
-
 nav > div > ul.nav-margin > li {
   display: inline;
-  padding: 0 125px;
-  margin-top: 3.5%; }
+  padding: 0 140px;
+  margin-top: 2%; }
   @media (min-width: 993px) and (max-width: 1200px) {
     nav > div > ul.nav-margin > li {
-      margin-top: 7.5%;
-      padding: 0 10px !important; } }
+      margin-top: 4%;
+      padding: 0 45px; } }
   @media (min-width: 1201px) and (max-width: 1500px) {
     nav > div > ul.nav-margin > li {
-      margin-top: 5.5%;
-      padding: 0 30px; } }
+      margin-top: 3%;
+      padding: 0 75px; } }
   @media (min-width: 1501px) and (max-width: 1700px) {
     nav > div > ul.nav-margin > li {
-      margin-top: 5%;
-      padding: 0 75px; } }
+      margin-top: 2.5%;
+      padding: 0 115px; } }
   nav > div > ul.nav-margin > li > a {
-    font-size: 32px; }
+    font-family: 'Oxygen', sans-serif;
+    font-size: 24px;
+    font-weight: 500; }
+
+ul.custom-nav > li > a:hover {
+  background-color: inherit; }
 
 @media (max-width: 992px) {
   h3 {
     font-size: 24px !important;
     font-style: italic; } }
-
-.divider {
-  margin-bottom: 2.5%; }
 
 .facebook i {
   font-size: 36px;
