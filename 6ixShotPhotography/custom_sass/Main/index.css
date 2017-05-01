@@ -1,10 +1,13 @@
 nav {
   position: absolute;
   top: 0;
-  z-index: 10;
+  z-index: 999;
   background: rgba(0, 0, 0, 0.7);
   width: 100%;
   border: 0 !important; }
+
+.side-nav {
+  height: 1024px; }
 
 a.brand-logo > img {
   opacity: 0.7;
