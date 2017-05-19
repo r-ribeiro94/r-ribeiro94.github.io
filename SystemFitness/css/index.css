@@ -1,0 +1,46 @@
+.navbar {
+  background-color: white !important;
+  margin-bottom: 0px; }
+
+#nav-list > li > a {
+  color: #6D6F73; }
+
+#mainjumbotron {
+  background: url("../images/test-jumbotron.jpg");
+  height: 75vh;
+  background-position: center;
+  background-size: cover; }
+
+#personal-training {
+  background: url("../images/pt-jumbo.jpg");
+  height: 50vh;
+  background-position: center;
+  background-size: cover;
+  border-radius: 0; }
+
+#classes {
+  background: url("../images/classes-jumbo.jpg") no-repeat;
+  height: 50vh;
+  background-position: center;
+  background-size: cover;
+  border-radius: 0; }
+
+#join-us {
+  background: url("../images/pt-jumbo.jpg");
+  height: 50vh;
+  background-position: center;
+  background-size: cover;
+  border-radius: 0; }
+
+#social-media-links {
+  margin-top: 1.5%;
+  margin-bottom: 1.5%; }
+
+li.footer-list {
+  display: inline;
+  margin-right: 2.5%;
+  margin-bottom: 2.5%; }
+
+li.footer-list a {
+  font-size: 18px;
+  color: white !important; }
