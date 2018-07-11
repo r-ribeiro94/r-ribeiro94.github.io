@@ -50,8 +50,8 @@ function getLocationAndWeather(){
     var response = JSON.parse(xhr.responseText);
     console.log(response);
 
-    var country = response.city.country;
-    var city = response.city.name;
+    var country = response.sys.country;
+    var city = response.name;
     document.getElementById("city").innerHTML = city + ", " + country;
 
     var arrayLength = response.list.length;
