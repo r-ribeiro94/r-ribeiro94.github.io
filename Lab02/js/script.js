@@ -50,8 +50,8 @@ function getLocationAndWeather(){
     var response = JSON.parse(xhr.responseText);
     console.log(response);
 
-    var country = response.sys.country;
-    var city = response.name;
+    var country = response.city.country;
+    var city = response.city.name;
     document.getElementById("city").innerHTML = city + ", " + country;
 
     var arrayLength = response.list.length;
@@ -121,7 +121,7 @@ function getLocationAndWeather(){
       alert("Could not complete the request");
     }, false);
 
-    xhr.open("GET", "//api.openweathermap.org/data/2.5/weather?q=" + c + "&APPID=98164dba4d0275cee356499f521ea54c&units=metric", true);
+    xhr.open("GET", "//api.openweathermap.org/data/2.5/forecast?q=" + c + "&APPID=98164dba4d0275cee356499f521ea54c&units=metric", true);
     xhr.send();
   }
   else{
