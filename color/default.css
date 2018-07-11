@@ -1,0 +1,33 @@
+a, a:hover {
+  color: #f44336;
+}
+
+
+/* Back to top button */
+.back-to-top {
+  background: #212121;
+  color: #fff;
+}
+
+
+.back-to-top:focus {
+  background: #212121;
+  color: #fff;
+}
+
+.back-to-top:hover {
+  background: #f44336;
+  color: #fff;
+}
+
+.navbar-default {
+  background: #212121;
+}
+
+.btn-theme {
+  background: #212121;
+}
+
+.contact-widget i {
+  color: #f44336;
+}
