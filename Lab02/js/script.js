@@ -122,6 +122,7 @@ function getLocationAndWeather(){
     }, false);
 
     xhr.open("GET", "//api.openweathermap.org/data/2.5/forecast?q=" + c + "&APPID=98164dba4d0275cee356499f521ea54c&units=metric", true);
+    console.log("//api.openweathermap.org/data/2.5/forecast?q=" + c + "&APPID=98164dba4d0275cee356499f521ea54c&units=metric");
     xhr.send();
   }
   else{
